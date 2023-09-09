@@ -1,0 +1,2048 @@
+Overall jobs count: 20842 | 13:02:2023 - 03:45:10:AM
+20 jobs are scraped | 13:02:2023 - 03:48:29:AM
+Overall jobs count: 20842 | 13:02:2023 - 03:51:28:AM
+Skill5 not scrapped in page 712: jobcard 17 | 13:02:2023 - 04:21:39:AM
+Skill6 not scrapped in page 712: jobcard 17 | 13:02:2023 - 04:21:39:AM
+Traceback (most recent call last):
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Program Files\Python310\lib\http\client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Program Files\Python310\lib\http\client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Program Files\Python310\lib\http\client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Program Files\Python310\lib\http\client.py", line 1037, in _send_output
+    self.send(msg)
+  File "C:\Program Files\Python310\lib\http\client.py", line 975, in send
+    self.connect()
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001389B1DA230>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Projects\JobRAID\Spider\naukri.py", line 172, in naukri_spider
+    try:jd = driver.find_element(By.XPATH,jdxpath).text
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 830, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 438, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\remote_connection.py", line 290, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\remote_connection.py", line 311, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\request.py", line 78, in request
+    return self.request_encode_body(
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connectionpool.py", line 813, in urlopen
+    return self.urlopen(
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connectionpool.py", line 813, in urlopen
+    return self.urlopen(
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connectionpool.py", line 813, in urlopen
+    return self.urlopen(
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=56221): Max retries exceeded with url: /session/1ce95a6ba77df90fc235bc96be951e3d/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001389B1DA230>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connection.py", line 239, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Program Files\Python310\lib\http\client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Program Files\Python310\lib\http\client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Program Files\Python310\lib\http\client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Program Files\Python310\lib\http\client.py", line 1037, in _send_output
+    self.send(msg)
+  File "C:\Program Files\Python310\lib\http\client.py", line 975, in send
+    self.connect()
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001389B1DA7A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Projects\JobRAID\Spider\naukri.py", line 174, in naukri_spider
+    jd = WebDriverWait(driver,sec).until(EC.presence_of_element_located((By.XPATH,jdxpath)))
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\wait.py", line 86, in until
+    value = method(self._driver)
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\support\expected_conditions.py", line 69, in _predicate
+    return driver.find_element(*locator)
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 830, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\webdriver.py", line 438, in execute
+    response = self.command_executor.execute(driver_command, params)
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\remote_connection.py", line 290, in execute
+    return self._request(command_info[0], url, body=data)
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\selenium\webdriver\remote\remote_connection.py", line 311, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\request.py", line 78, in request
+    return self.request_encode_body(
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connectionpool.py", line 813, in urlopen
+    return self.urlopen(
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connectionpool.py", line 813, in urlopen
+    return self.urlopen(
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connectionpool.py", line 813, in urlopen
+    return self.urlopen(
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\connectionpool.py", line 785, in urlopen
+    retries = retries.increment(
+  File "C:\Users\spart\AppData\Roaming\Python\Python310\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=56221): Max retries exceeded with url: /session/1ce95a6ba77df90fc235bc96be951e3d/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001389B1DA7A0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+ | 13:02:2023 - 04:22:12:AM
+14216 jobs are scraped | 13:02:2023 - 04:22:12:AM
+Overall jobs count: 20842 | 13:02:2023 - 04:33:14:AM
+20 jobs are scraped | 13:02:2023 - 04:36:27:AM
+Total rows in DF : 20 | 13:02:2023 - 04:36:29:AM
+After removing na's : 20 | 13:02:2023 - 04:36:29:AM
+Starting to insert rows into DB | 13:02:2023 - 04:36:29:AM
+All rows were inserted
+ | 13:02:2023 - 04:36:29:AM
+Overall jobs count: 43811 | 13:02:2023 - 04:36:55:AM
+Skill6 not scrapped in page 2: jobcard 5 | 13:02:2023 - 04:36:56:AM
+Skill6 not scrapped in page 2: jobcard 8 | 13:02:2023 - 04:36:57:AM
+Skill6 not scrapped in page 2: jobcard 15 | 13:02:2023 - 04:36:58:AM
+20 jobs are scraped | 13:02:2023 - 04:43:23:AM
+Total rows in DF : 20 | 13:02:2023 - 04:43:25:AM
+After removing na's : 20 | 13:02:2023 - 04:43:25:AM
+Starting to insert rows into DB | 13:02:2023 - 04:43:25:AM
+All rows were inserted
+ | 13:02:2023 - 04:43:25:AM
+Overall jobs count: 116561 | 13:02:2023 - 04:45:15:AM
+Skill5 not scrapped in page 2: jobcard 4 | 13:02:2023 - 04:45:16:AM
+Skill6 not scrapped in page 2: jobcard 4 | 13:02:2023 - 04:45:16:AM
+20 jobs are scraped | 13:02:2023 - 05:02:17:AM
+Total rows in DF : 20 | 13:02:2023 - 05:02:19:AM
+After removing na's : 20 | 13:02:2023 - 05:02:19:AM
+Starting to insert rows into DB | 13:02:2023 - 05:02:19:AM
+All rows were inserted
+ | 13:02:2023 - 05:02:19:AM
+Overall jobs count: 17308 | 13:02:2023 - 05:02:49:AM
+Skill6 not scrapped in page 2: jobcard 2 | 13:02:2023 - 05:02:50:AM
+Skill6 not scrapped in page 2: jobcard 3 | 13:02:2023 - 05:02:50:AM
+Skill6 not scrapped in page 2: jobcard 4 | 13:02:2023 - 05:02:50:AM
+20 jobs are scraped | 13:02:2023 - 05:05:28:AM
+Total rows in DF : 20 | 13:02:2023 - 05:05:30:AM
+After removing na's : 20 | 13:02:2023 - 05:05:30:AM
+Starting to insert rows into DB | 13:02:2023 - 05:05:30:AM
+All rows were inserted
+ | 13:02:2023 - 05:05:30:AM
+Overall jobs count: 177114 | 13:02:2023 - 05:06:20:AM
+Skill6 not scrapped in page 2: jobcard 6 | 13:02:2023 - 05:06:21:AM
+20 jobs are scraped | 13:02:2023 - 05:32:14:AM
+Total rows in DF : 20 | 13:02:2023 - 05:32:16:AM
+After removing na's : 20 | 13:02:2023 - 05:32:16:AM
+Starting to insert rows into DB | 13:02:2023 - 05:32:16:AM
+All rows were inserted
+ | 13:02:2023 - 05:32:16:AM
+Overall jobs count: 11654 | 13:02:2023 - 05:34:22:AM
+Skill5 not scrapped in page 2: jobcard 3 | 13:02:2023 - 05:34:23:AM
+Skill6 not scrapped in page 2: jobcard 3 | 13:02:2023 - 05:34:23:AM
+Skill5 not scrapped in page 2: jobcard 8 | 13:02:2023 - 05:34:24:AM
+Skill6 not scrapped in page 2: jobcard 8 | 13:02:2023 - 05:34:24:AM
+Skill3 not scrapped in page 2: jobcard 11 | 13:02:2023 - 05:34:24:AM
+Skill4 not scrapped in page 2: jobcard 11 | 13:02:2023 - 05:34:24:AM
+Skill5 not scrapped in page 2: jobcard 11 | 13:02:2023 - 05:34:24:AM
+Skill6 not scrapped in page 2: jobcard 11 | 13:02:2023 - 05:34:24:AM
+Skill3 not scrapped in page 2: jobcard 12 | 13:02:2023 - 05:34:25:AM
+Skill4 not scrapped in page 2: jobcard 12 | 13:02:2023 - 05:34:25:AM
+Skill5 not scrapped in page 2: jobcard 12 | 13:02:2023 - 05:34:25:AM
+Skill6 not scrapped in page 2: jobcard 12 | 13:02:2023 - 05:34:25:AM
+Skill4 not scrapped in page 2: jobcard 13 | 13:02:2023 - 05:34:25:AM
+Skill5 not scrapped in page 2: jobcard 13 | 13:02:2023 - 05:34:25:AM
+Skill6 not scrapped in page 2: jobcard 13 | 13:02:2023 - 05:34:25:AM
+Skill4 not scrapped in page 2: jobcard 15 | 13:02:2023 - 05:34:25:AM
+Skill5 not scrapped in page 2: jobcard 15 | 13:02:2023 - 05:34:25:AM
+Skill6 not scrapped in page 2: jobcard 15 | 13:02:2023 - 05:34:25:AM
+Skill4 not scrapped in page 2: jobcard 20 | 13:02:2023 - 05:34:26:AM
+Skill5 not scrapped in page 2: jobcard 20 | 13:02:2023 - 05:34:26:AM
+Skill6 not scrapped in page 2: jobcard 20 | 13:02:2023 - 05:34:26:AM
+20 jobs are scraped | 13:02:2023 - 05:36:07:AM
+Total rows in DF : 20 | 13:02:2023 - 05:36:07:AM
+After removing na's : 20 | 13:02:2023 - 05:36:07:AM
+Starting to insert rows into DB | 13:02:2023 - 05:36:07:AM
+All rows were inserted
+ | 13:02:2023 - 05:36:07:AM
+Overall jobs count: 119826 | 13:02:2023 - 05:49:08:AM
+Skill6 not scrapped in page 2: jobcard 11 | 13:02:2023 - 05:49:11:AM
+Skill6 not scrapped in page 3: jobcard 11 | 13:02:2023 - 05:49:14:AM
+Skill6 not scrapped in page 4: jobcard 11 | 13:02:2023 - 05:49:17:AM
+Skill6 not scrapped in page 5: jobcard 11 | 13:02:2023 - 05:49:20:AM
+Skill6 not scrapped in page 6: jobcard 11 | 13:02:2023 - 05:49:22:AM
+Skill6 not scrapped in page 7: jobcard 11 | 13:02:2023 - 05:49:25:AM
+Skill6 not scrapped in page 8: jobcard 11 | 13:02:2023 - 05:49:28:AM
+Skill6 not scrapped in page 9: jobcard 11 | 13:02:2023 - 05:49:30:AM
+Skill6 not scrapped in page 10: jobcard 11 | 13:02:2023 - 05:49:33:AM
+Skill6 not scrapped in page 11: jobcard 11 | 13:02:2023 - 05:49:36:AM
+Skill6 not scrapped in page 12: jobcard 11 | 13:02:2023 - 05:49:38:AM
+Skill6 not scrapped in page 13: jobcard 11 | 13:02:2023 - 05:49:41:AM
+Skill6 not scrapped in page 14: jobcard 11 | 13:02:2023 - 05:49:43:AM
+Skill6 not scrapped in page 15: jobcard 11 | 13:02:2023 - 05:49:46:AM
+Skill6 not scrapped in page 16: jobcard 11 | 13:02:2023 - 05:49:49:AM
+Overall jobs count: 18825 | 26:04:2023 - 02:19:19:PM
+Traceback (most recent call last):
+  File "f:\Cresteem - Helian\Projects\JobRAID\Spider\naukri.py", line 77, in naukri_spider
+    for i in tqdm(range(1,itrcount),"Crawling"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\tqdm\_tqdm.py", line 383, in __new__
+    cls.monitor = TMonitor(cls, cls.monitor_interval)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\tqdm\_tqdm.py", line 68, in __init__
+    getattr(sys, 'setcheckinterval'))(100)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'sys' has no attribute 'setcheckinterval'
+ | 26:04:2023 - 02:19:19:PM
+0 jobs are scraped | 26:04:2023 - 02:19:19:PM
+Total rows in DF : 0 | 26:04:2023 - 02:19:21:PM
+After removing na's : 0 | 26:04:2023 - 02:19:21:PM
+Starting to insert rows into DB | 26:04:2023 - 02:19:21:PM
+All rows were inserted
+ | 26:04:2023 - 02:19:21:PM
+Overall jobs count: 43900 | 26:04:2023 - 02:19:36:PM
+Traceback (most recent call last):
+  File "f:\Cresteem - Helian\Projects\JobRAID\Spider\naukri.py", line 77, in naukri_spider
+    for i in tqdm(range(1,itrcount),"Crawling"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\tqdm\_tqdm.py", line 383, in __new__
+    cls.monitor = TMonitor(cls, cls.monitor_interval)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\tqdm\_tqdm.py", line 68, in __init__
+    getattr(sys, 'setcheckinterval'))(100)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'sys' has no attribute 'setcheckinterval'
+ | 26:04:2023 - 02:19:36:PM
+0 jobs are scraped | 26:04:2023 - 02:19:36:PM
+Total rows in DF : 0 | 26:04:2023 - 02:19:38:PM
+After removing na's : 0 | 26:04:2023 - 02:19:38:PM
+Starting to insert rows into DB | 26:04:2023 - 02:19:38:PM
+All rows were inserted
+ | 26:04:2023 - 02:19:38:PM
+Overall jobs count: 123381 | 26:04:2023 - 02:19:54:PM
+Traceback (most recent call last):
+  File "f:\Cresteem - Helian\Projects\JobRAID\Spider\naukri.py", line 77, in naukri_spider
+    for i in tqdm(range(1,itrcount),"Crawling"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\tqdm\_tqdm.py", line 383, in __new__
+    cls.monitor = TMonitor(cls, cls.monitor_interval)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\tqdm\_tqdm.py", line 68, in __init__
+    getattr(sys, 'setcheckinterval'))(100)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'sys' has no attribute 'setcheckinterval'
+ | 26:04:2023 - 02:19:54:PM
+0 jobs are scraped | 26:04:2023 - 02:19:54:PM
+Total rows in DF : 0 | 26:04:2023 - 02:19:56:PM
+After removing na's : 0 | 26:04:2023 - 02:19:56:PM
+Starting to insert rows into DB | 26:04:2023 - 02:19:56:PM
+All rows were inserted
+ | 26:04:2023 - 02:19:56:PM
+Overall jobs count: 17649 | 26:04:2023 - 02:20:11:PM
+Traceback (most recent call last):
+  File "f:\Cresteem - Helian\Projects\JobRAID\Spider\naukri.py", line 77, in naukri_spider
+    for i in tqdm(range(1,itrcount),"Crawling"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\tqdm\_tqdm.py", line 383, in __new__
+    cls.monitor = TMonitor(cls, cls.monitor_interval)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\tqdm\_tqdm.py", line 68, in __init__
+    getattr(sys, 'setcheckinterval'))(100)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'sys' has no attribute 'setcheckinterval'
+ | 26:04:2023 - 02:20:11:PM
+0 jobs are scraped | 26:04:2023 - 02:20:11:PM
+Total rows in DF : 0 | 26:04:2023 - 02:20:13:PM
+After removing na's : 0 | 26:04:2023 - 02:20:13:PM
+Starting to insert rows into DB | 26:04:2023 - 02:20:13:PM
+All rows were inserted
+ | 26:04:2023 - 02:20:13:PM
+Overall jobs count: 185150 | 26:04:2023 - 02:20:29:PM
+Traceback (most recent call last):
+  File "f:\Cresteem - Helian\Projects\JobRAID\Spider\naukri.py", line 77, in naukri_spider
+    for i in tqdm(range(1,itrcount),"Crawling"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\tqdm\_tqdm.py", line 383, in __new__
+    cls.monitor = TMonitor(cls, cls.monitor_interval)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\tqdm\_tqdm.py", line 68, in __init__
+    getattr(sys, 'setcheckinterval'))(100)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'sys' has no attribute 'setcheckinterval'
+ | 26:04:2023 - 02:20:29:PM
+0 jobs are scraped | 26:04:2023 - 02:20:29:PM
+Total rows in DF : 0 | 26:04:2023 - 02:20:31:PM
+After removing na's : 0 | 26:04:2023 - 02:20:31:PM
+Starting to insert rows into DB | 26:04:2023 - 02:20:31:PM
+All rows were inserted
+ | 26:04:2023 - 02:20:31:PM
+Overall jobs count: 12800 | 26:04:2023 - 02:20:51:PM
+Traceback (most recent call last):
+  File "f:\Cresteem - Helian\Projects\JobRAID\Spider\naukri.py", line 77, in naukri_spider
+    for i in tqdm(range(1,itrcount),"Crawling"):
+             ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\tqdm\_tqdm.py", line 383, in __new__
+    cls.monitor = TMonitor(cls, cls.monitor_interval)
+                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\tqdm\_tqdm.py", line 68, in __init__
+    getattr(sys, 'setcheckinterval'))(100)
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: module 'sys' has no attribute 'setcheckinterval'
+ | 26:04:2023 - 02:20:51:PM
+0 jobs are scraped | 26:04:2023 - 02:20:51:PM
+Total rows in DF : 0 | 26:04:2023 - 02:20:53:PM
+After removing na's : 0 | 26:04:2023 - 02:20:53:PM
+Starting to insert rows into DB | 26:04:2023 - 02:20:53:PM
+All rows were inserted
+ | 26:04:2023 - 02:20:53:PM
+Overall jobs count: 18910 | 26:04:2023 - 03:05:14:PM
+Skill6 not scrapped in page 2: jobcard 9 | 26:04:2023 - 03:05:16:PM
+Skill6 not scrapped in page 3: jobcard 9 | 26:04:2023 - 03:05:20:PM
+Skill6 not scrapped in page 4: jobcard 9 | 26:04:2023 - 03:05:23:PM
+Skill6 not scrapped in page 5: jobcard 9 | 26:04:2023 - 03:05:25:PM
+Skill6 not scrapped in page 6: jobcard 9 | 26:04:2023 - 03:05:28:PM
+Skill6 not scrapped in page 7: jobcard 9 | 26:04:2023 - 03:05:32:PM
+Skill6 not scrapped in page 8: jobcard 9 | 26:04:2023 - 03:05:35:PM
+Skill6 not scrapped in page 9: jobcard 9 | 26:04:2023 - 03:05:39:PM
+Skill6 not scrapped in page 10: jobcard 9 | 26:04:2023 - 03:05:42:PM
+Skill6 not scrapped in page 11: jobcard 9 | 26:04:2023 - 03:05:44:PM
+Skill6 not scrapped in page 12: jobcard 9 | 26:04:2023 - 03:05:47:PM
+Skill6 not scrapped in page 13: jobcard 9 | 26:04:2023 - 03:05:50:PM
+Skill6 not scrapped in page 14: jobcard 9 | 26:04:2023 - 03:05:53:PM
+Skill6 not scrapped in page 15: jobcard 9 | 26:04:2023 - 03:05:55:PM
+Skill6 not scrapped in page 16: jobcard 9 | 26:04:2023 - 03:05:58:PM
+Skill6 not scrapped in page 17: jobcard 9 | 26:04:2023 - 03:06:01:PM
+Skill6 not scrapped in page 18: jobcard 9 | 26:04:2023 - 03:06:03:PM
+Skill6 not scrapped in page 19: jobcard 9 | 26:04:2023 - 03:06:06:PM
+Skill6 not scrapped in page 20: jobcard 9 | 26:04:2023 - 03:06:09:PM
+Skill6 not scrapped in page 21: jobcard 9 | 26:04:2023 - 03:06:11:PM
+Skill6 not scrapped in page 22: jobcard 9 | 26:04:2023 - 03:06:14:PM
+Skill6 not scrapped in page 23: jobcard 9 | 26:04:2023 - 03:06:17:PM
+Skill6 not scrapped in page 24: jobcard 9 | 26:04:2023 - 03:06:19:PM
+Skill6 not scrapped in page 25: jobcard 9 | 26:04:2023 - 03:06:22:PM
+Skill6 not scrapped in page 26: jobcard 9 | 26:04:2023 - 03:06:24:PM
+Skill6 not scrapped in page 27: jobcard 9 | 26:04:2023 - 03:06:27:PM
+Skill6 not scrapped in page 28: jobcard 9 | 26:04:2023 - 03:06:30:PM
+Skill6 not scrapped in page 29: jobcard 9 | 26:04:2023 - 03:06:33:PM
+Skill6 not scrapped in page 30: jobcard 9 | 26:04:2023 - 03:06:35:PM
+Skill6 not scrapped in page 31: jobcard 9 | 26:04:2023 - 03:06:38:PM
+Skill6 not scrapped in page 32: jobcard 9 | 26:04:2023 - 03:06:41:PM
+Skill6 not scrapped in page 33: jobcard 9 | 26:04:2023 - 03:06:44:PM
+Skill6 not scrapped in page 34: jobcard 9 | 26:04:2023 - 03:06:47:PM
+Skill6 not scrapped in page 35: jobcard 9 | 26:04:2023 - 03:06:49:PM
+Skill6 not scrapped in page 36: jobcard 9 | 26:04:2023 - 03:06:52:PM
+Skill6 not scrapped in page 37: jobcard 9 | 26:04:2023 - 03:06:55:PM
+Skill6 not scrapped in page 38: jobcard 9 | 26:04:2023 - 03:06:57:PM
+Skill6 not scrapped in page 39: jobcard 9 | 26:04:2023 - 03:07:00:PM
+Skill6 not scrapped in page 40: jobcard 9 | 26:04:2023 - 03:07:03:PM
+Skill6 not scrapped in page 41: jobcard 9 | 26:04:2023 - 03:07:06:PM
+Skill6 not scrapped in page 42: jobcard 9 | 26:04:2023 - 03:07:09:PM
+Skill6 not scrapped in page 43: jobcard 9 | 26:04:2023 - 03:07:11:PM
+Skill6 not scrapped in page 44: jobcard 9 | 26:04:2023 - 03:07:14:PM
+Skill6 not scrapped in page 45: jobcard 9 | 26:04:2023 - 03:07:17:PM
+Skill6 not scrapped in page 46: jobcard 9 | 26:04:2023 - 03:07:20:PM
+Skill6 not scrapped in page 47: jobcard 9 | 26:04:2023 - 03:07:23:PM
+Skill6 not scrapped in page 48: jobcard 9 | 26:04:2023 - 03:07:25:PM
+Skill6 not scrapped in page 49: jobcard 9 | 26:04:2023 - 03:07:28:PM
+Skill6 not scrapped in page 50: jobcard 9 | 26:04:2023 - 03:07:31:PM
+Skill6 not scrapped in page 51: jobcard 9 | 26:04:2023 - 03:07:34:PM
+Skill6 not scrapped in page 52: jobcard 9 | 26:04:2023 - 03:07:37:PM
+Skill6 not scrapped in page 53: jobcard 9 | 26:04:2023 - 03:07:39:PM
+Skill6 not scrapped in page 54: jobcard 9 | 26:04:2023 - 03:07:42:PM
+Skill6 not scrapped in page 55: jobcard 9 | 26:04:2023 - 03:07:45:PM
+Skill6 not scrapped in page 56: jobcard 9 | 26:04:2023 - 03:07:48:PM
+Skill6 not scrapped in page 57: jobcard 9 | 26:04:2023 - 03:07:51:PM
+Skill6 not scrapped in page 58: jobcard 9 | 26:04:2023 - 03:07:54:PM
+Skill6 not scrapped in page 59: jobcard 9 | 26:04:2023 - 03:07:57:PM
+Skill6 not scrapped in page 60: jobcard 9 | 26:04:2023 - 03:08:00:PM
+Skill6 not scrapped in page 61: jobcard 9 | 26:04:2023 - 03:08:03:PM
+Skill6 not scrapped in page 62: jobcard 9 | 26:04:2023 - 03:08:06:PM
+Skill6 not scrapped in page 63: jobcard 9 | 26:04:2023 - 03:08:08:PM
+Skill6 not scrapped in page 64: jobcard 9 | 26:04:2023 - 03:08:11:PM
+Skill6 not scrapped in page 65: jobcard 9 | 26:04:2023 - 03:08:14:PM
+Skill6 not scrapped in page 66: jobcard 9 | 26:04:2023 - 03:08:16:PM
+Skill6 not scrapped in page 67: jobcard 9 | 26:04:2023 - 03:08:19:PM
+Skill6 not scrapped in page 68: jobcard 9 | 26:04:2023 - 03:08:22:PM
+Skill6 not scrapped in page 69: jobcard 9 | 26:04:2023 - 03:08:24:PM
+Skill6 not scrapped in page 70: jobcard 9 | 26:04:2023 - 03:08:27:PM
+Skill6 not scrapped in page 71: jobcard 9 | 26:04:2023 - 03:08:30:PM
+Skill6 not scrapped in page 72: jobcard 9 | 26:04:2023 - 03:08:33:PM
+Skill6 not scrapped in page 73: jobcard 9 | 26:04:2023 - 03:08:35:PM
+Skill6 not scrapped in page 74: jobcard 9 | 26:04:2023 - 03:08:38:PM
+Skill6 not scrapped in page 75: jobcard 9 | 26:04:2023 - 03:08:41:PM
+Skill6 not scrapped in page 76: jobcard 9 | 26:04:2023 - 03:08:44:PM
+Skill6 not scrapped in page 77: jobcard 9 | 26:04:2023 - 03:08:46:PM
+Skill6 not scrapped in page 78: jobcard 9 | 26:04:2023 - 03:08:49:PM
+Skill6 not scrapped in page 79: jobcard 9 | 26:04:2023 - 03:08:52:PM
+Skill6 not scrapped in page 80: jobcard 9 | 26:04:2023 - 03:08:55:PM
+Skill6 not scrapped in page 81: jobcard 9 | 26:04:2023 - 03:08:57:PM
+Skill6 not scrapped in page 82: jobcard 9 | 26:04:2023 - 03:09:00:PM
+Skill6 not scrapped in page 83: jobcard 9 | 26:04:2023 - 03:09:03:PM
+Skill6 not scrapped in page 84: jobcard 9 | 26:04:2023 - 03:09:06:PM
+Skill6 not scrapped in page 85: jobcard 9 | 26:04:2023 - 03:09:09:PM
+Skill6 not scrapped in page 86: jobcard 9 | 26:04:2023 - 03:09:12:PM
+Skill6 not scrapped in page 87: jobcard 9 | 26:04:2023 - 03:09:15:PM
+Skill6 not scrapped in page 88: jobcard 9 | 26:04:2023 - 03:09:17:PM
+Skill6 not scrapped in page 89: jobcard 9 | 26:04:2023 - 03:09:20:PM
+Skill6 not scrapped in page 90: jobcard 9 | 26:04:2023 - 03:09:23:PM
+Skill6 not scrapped in page 91: jobcard 9 | 26:04:2023 - 03:09:26:PM
+Skill6 not scrapped in page 92: jobcard 9 | 26:04:2023 - 03:09:28:PM
+Skill6 not scrapped in page 93: jobcard 9 | 26:04:2023 - 03:09:31:PM
+Skill6 not scrapped in page 94: jobcard 9 | 26:04:2023 - 03:09:34:PM
+Skill6 not scrapped in page 95: jobcard 9 | 26:04:2023 - 03:09:37:PM
+Skill6 not scrapped in page 96: jobcard 9 | 26:04:2023 - 03:09:39:PM
+Skill6 not scrapped in page 97: jobcard 9 | 26:04:2023 - 03:09:42:PM
+Skill6 not scrapped in page 98: jobcard 9 | 26:04:2023 - 03:09:45:PM
+Skill6 not scrapped in page 99: jobcard 9 | 26:04:2023 - 03:09:48:PM
+Skill6 not scrapped in page 100: jobcard 9 | 26:04:2023 - 03:09:50:PM
+Skill6 not scrapped in page 101: jobcard 9 | 26:04:2023 - 03:09:53:PM
+Skill6 not scrapped in page 102: jobcard 9 | 26:04:2023 - 03:09:56:PM
+Skill6 not scrapped in page 103: jobcard 9 | 26:04:2023 - 03:09:59:PM
+Skill6 not scrapped in page 104: jobcard 9 | 26:04:2023 - 03:10:01:PM
+Skill6 not scrapped in page 105: jobcard 9 | 26:04:2023 - 03:10:04:PM
+Skill6 not scrapped in page 106: jobcard 9 | 26:04:2023 - 03:10:07:PM
+Skill6 not scrapped in page 107: jobcard 9 | 26:04:2023 - 03:10:10:PM
+Skill6 not scrapped in page 108: jobcard 9 | 26:04:2023 - 03:10:12:PM
+Skill6 not scrapped in page 109: jobcard 9 | 26:04:2023 - 03:10:15:PM
+Skill6 not scrapped in page 110: jobcard 9 | 26:04:2023 - 03:10:18:PM
+Skill6 not scrapped in page 111: jobcard 9 | 26:04:2023 - 03:10:21:PM
+Skill6 not scrapped in page 112: jobcard 9 | 26:04:2023 - 03:10:23:PM
+Skill6 not scrapped in page 113: jobcard 9 | 26:04:2023 - 03:10:26:PM
+Skill6 not scrapped in page 114: jobcard 9 | 26:04:2023 - 03:10:29:PM
+Skill6 not scrapped in page 115: jobcard 9 | 26:04:2023 - 03:10:32:PM
+Skill6 not scrapped in page 116: jobcard 9 | 26:04:2023 - 03:10:34:PM
+Skill6 not scrapped in page 117: jobcard 9 | 26:04:2023 - 03:10:37:PM
+Skill6 not scrapped in page 118: jobcard 9 | 26:04:2023 - 03:10:40:PM
+Skill6 not scrapped in page 119: jobcard 9 | 26:04:2023 - 03:10:43:PM
+Skill6 not scrapped in page 120: jobcard 9 | 26:04:2023 - 03:10:46:PM
+Skill6 not scrapped in page 121: jobcard 9 | 26:04:2023 - 03:10:48:PM
+Skill6 not scrapped in page 122: jobcard 9 | 26:04:2023 - 03:10:51:PM
+Skill6 not scrapped in page 123: jobcard 9 | 26:04:2023 - 03:10:54:PM
+Skill6 not scrapped in page 124: jobcard 9 | 26:04:2023 - 03:10:57:PM
+Skill6 not scrapped in page 125: jobcard 9 | 26:04:2023 - 03:10:59:PM
+Skill6 not scrapped in page 126: jobcard 9 | 26:04:2023 - 03:11:02:PM
+Skill6 not scrapped in page 127: jobcard 9 | 26:04:2023 - 03:11:05:PM
+Skill6 not scrapped in page 128: jobcard 9 | 26:04:2023 - 03:11:08:PM
+Skill6 not scrapped in page 129: jobcard 9 | 26:04:2023 - 03:11:10:PM
+Skill6 not scrapped in page 130: jobcard 9 | 26:04:2023 - 03:11:13:PM
+Skill6 not scrapped in page 131: jobcard 9 | 26:04:2023 - 03:11:16:PM
+Skill6 not scrapped in page 132: jobcard 9 | 26:04:2023 - 03:11:19:PM
+Skill6 not scrapped in page 133: jobcard 9 | 26:04:2023 - 03:11:22:PM
+Skill6 not scrapped in page 134: jobcard 9 | 26:04:2023 - 03:11:25:PM
+Skill6 not scrapped in page 135: jobcard 9 | 26:04:2023 - 03:11:28:PM
+Skill6 not scrapped in page 136: jobcard 9 | 26:04:2023 - 03:11:30:PM
+Skill6 not scrapped in page 137: jobcard 9 | 26:04:2023 - 03:11:33:PM
+Skill6 not scrapped in page 138: jobcard 9 | 26:04:2023 - 03:11:36:PM
+Skill6 not scrapped in page 139: jobcard 9 | 26:04:2023 - 03:11:39:PM
+Skill6 not scrapped in page 140: jobcard 9 | 26:04:2023 - 03:11:41:PM
+Skill6 not scrapped in page 141: jobcard 9 | 26:04:2023 - 03:11:44:PM
+Skill6 not scrapped in page 142: jobcard 9 | 26:04:2023 - 03:11:47:PM
+Skill6 not scrapped in page 143: jobcard 9 | 26:04:2023 - 03:11:49:PM
+Skill6 not scrapped in page 144: jobcard 9 | 26:04:2023 - 03:11:52:PM
+Skill6 not scrapped in page 145: jobcard 9 | 26:04:2023 - 03:11:55:PM
+Skill6 not scrapped in page 146: jobcard 9 | 26:04:2023 - 03:11:57:PM
+Skill6 not scrapped in page 147: jobcard 9 | 26:04:2023 - 03:12:00:PM
+Skill6 not scrapped in page 148: jobcard 9 | 26:04:2023 - 03:12:03:PM
+Skill6 not scrapped in page 149: jobcard 9 | 26:04:2023 - 03:12:05:PM
+Skill6 not scrapped in page 150: jobcard 9 | 26:04:2023 - 03:12:08:PM
+Skill6 not scrapped in page 151: jobcard 9 | 26:04:2023 - 03:12:11:PM
+Skill6 not scrapped in page 152: jobcard 9 | 26:04:2023 - 03:12:14:PM
+Skill6 not scrapped in page 153: jobcard 9 | 26:04:2023 - 03:12:16:PM
+Skill6 not scrapped in page 154: jobcard 9 | 26:04:2023 - 03:12:19:PM
+Skill6 not scrapped in page 155: jobcard 9 | 26:04:2023 - 03:12:22:PM
+Skill6 not scrapped in page 156: jobcard 9 | 26:04:2023 - 03:12:24:PM
+Skill6 not scrapped in page 157: jobcard 9 | 26:04:2023 - 03:12:27:PM
+Skill6 not scrapped in page 158: jobcard 9 | 26:04:2023 - 03:12:30:PM
+Skill6 not scrapped in page 159: jobcard 9 | 26:04:2023 - 03:12:33:PM
+Skill6 not scrapped in page 160: jobcard 9 | 26:04:2023 - 03:12:35:PM
+Skill6 not scrapped in page 161: jobcard 9 | 26:04:2023 - 03:12:38:PM
+Skill6 not scrapped in page 162: jobcard 9 | 26:04:2023 - 03:12:41:PM
+Skill6 not scrapped in page 163: jobcard 9 | 26:04:2023 - 03:12:43:PM
+Skill6 not scrapped in page 164: jobcard 9 | 26:04:2023 - 03:12:46:PM
+Skill6 not scrapped in page 165: jobcard 9 | 26:04:2023 - 03:12:49:PM
+Skill6 not scrapped in page 166: jobcard 9 | 26:04:2023 - 03:12:51:PM
+Skill6 not scrapped in page 167: jobcard 9 | 26:04:2023 - 03:12:54:PM
+Skill6 not scrapped in page 168: jobcard 9 | 26:04:2023 - 03:12:57:PM
+Skill6 not scrapped in page 169: jobcard 9 | 26:04:2023 - 03:12:59:PM
+Skill6 not scrapped in page 170: jobcard 9 | 26:04:2023 - 03:13:02:PM
+Skill6 not scrapped in page 171: jobcard 9 | 26:04:2023 - 03:13:05:PM
+Skill6 not scrapped in page 172: jobcard 9 | 26:04:2023 - 03:13:07:PM
+Skill6 not scrapped in page 173: jobcard 9 | 26:04:2023 - 03:13:10:PM
+Skill6 not scrapped in page 174: jobcard 9 | 26:04:2023 - 03:13:13:PM
+Skill6 not scrapped in page 175: jobcard 9 | 26:04:2023 - 03:13:15:PM
+Skill6 not scrapped in page 176: jobcard 9 | 26:04:2023 - 03:13:18:PM
+Skill6 not scrapped in page 177: jobcard 9 | 26:04:2023 - 03:13:21:PM
+Skill6 not scrapped in page 178: jobcard 9 | 26:04:2023 - 03:13:24:PM
+Skill6 not scrapped in page 179: jobcard 9 | 26:04:2023 - 03:13:26:PM
+Skill6 not scrapped in page 180: jobcard 9 | 26:04:2023 - 03:13:29:PM
+Skill6 not scrapped in page 181: jobcard 9 | 26:04:2023 - 03:13:32:PM
+Skill6 not scrapped in page 182: jobcard 9 | 26:04:2023 - 03:13:34:PM
+Skill6 not scrapped in page 183: jobcard 9 | 26:04:2023 - 03:13:37:PM
+Skill6 not scrapped in page 184: jobcard 9 | 26:04:2023 - 03:13:40:PM
+Skill6 not scrapped in page 185: jobcard 9 | 26:04:2023 - 03:13:42:PM
+Skill6 not scrapped in page 186: jobcard 9 | 26:04:2023 - 03:13:45:PM
+Skill6 not scrapped in page 187: jobcard 9 | 26:04:2023 - 03:13:48:PM
+Skill6 not scrapped in page 188: jobcard 9 | 26:04:2023 - 03:13:50:PM
+Skill6 not scrapped in page 189: jobcard 9 | 26:04:2023 - 03:13:53:PM
+Skill6 not scrapped in page 190: jobcard 9 | 26:04:2023 - 03:13:56:PM
+Skill6 not scrapped in page 191: jobcard 9 | 26:04:2023 - 03:13:58:PM
+Skill6 not scrapped in page 192: jobcard 9 | 26:04:2023 - 03:14:01:PM
+Skill6 not scrapped in page 193: jobcard 9 | 26:04:2023 - 03:14:04:PM
+Skill6 not scrapped in page 194: jobcard 9 | 26:04:2023 - 03:14:06:PM
+Skill6 not scrapped in page 195: jobcard 9 | 26:04:2023 - 03:14:09:PM
+Skill6 not scrapped in page 196: jobcard 9 | 26:04:2023 - 03:14:12:PM
+Skill6 not scrapped in page 197: jobcard 9 | 26:04:2023 - 03:14:14:PM
+Skill6 not scrapped in page 198: jobcard 9 | 26:04:2023 - 03:14:17:PM
+Skill6 not scrapped in page 199: jobcard 9 | 26:04:2023 - 03:14:20:PM
+Skill6 not scrapped in page 200: jobcard 9 | 26:04:2023 - 03:14:22:PM
+Skill6 not scrapped in page 201: jobcard 9 | 26:04:2023 - 03:14:25:PM
+Skill6 not scrapped in page 202: jobcard 9 | 26:04:2023 - 03:14:28:PM
+Skill6 not scrapped in page 203: jobcard 9 | 26:04:2023 - 03:14:30:PM
+Skill6 not scrapped in page 204: jobcard 9 | 26:04:2023 - 03:14:33:PM
+Skill6 not scrapped in page 205: jobcard 9 | 26:04:2023 - 03:14:36:PM
+Skill6 not scrapped in page 206: jobcard 9 | 26:04:2023 - 03:14:38:PM
+Skill6 not scrapped in page 207: jobcard 9 | 26:04:2023 - 03:14:41:PM
+Skill6 not scrapped in page 208: jobcard 9 | 26:04:2023 - 03:14:44:PM
+Skill6 not scrapped in page 209: jobcard 9 | 26:04:2023 - 03:14:46:PM
+Skill6 not scrapped in page 210: jobcard 9 | 26:04:2023 - 03:14:49:PM
+Skill6 not scrapped in page 211: jobcard 9 | 26:04:2023 - 03:14:52:PM
+Skill6 not scrapped in page 212: jobcard 9 | 26:04:2023 - 03:14:54:PM
+Skill6 not scrapped in page 213: jobcard 9 | 26:04:2023 - 03:14:57:PM
+Skill6 not scrapped in page 214: jobcard 9 | 26:04:2023 - 03:15:00:PM
+Skill6 not scrapped in page 215: jobcard 9 | 26:04:2023 - 03:15:02:PM
+Skill6 not scrapped in page 216: jobcard 9 | 26:04:2023 - 03:15:05:PM
+Skill6 not scrapped in page 217: jobcard 9 | 26:04:2023 - 03:15:08:PM
+Skill6 not scrapped in page 218: jobcard 9 | 26:04:2023 - 03:15:10:PM
+Skill6 not scrapped in page 219: jobcard 9 | 26:04:2023 - 03:15:13:PM
+Skill6 not scrapped in page 220: jobcard 9 | 26:04:2023 - 03:15:16:PM
+Skill6 not scrapped in page 221: jobcard 9 | 26:04:2023 - 03:15:19:PM
+Skill6 not scrapped in page 222: jobcard 9 | 26:04:2023 - 03:15:21:PM
+Skill6 not scrapped in page 223: jobcard 9 | 26:04:2023 - 03:15:24:PM
+Skill6 not scrapped in page 224: jobcard 9 | 26:04:2023 - 03:15:27:PM
+Skill6 not scrapped in page 225: jobcard 9 | 26:04:2023 - 03:15:29:PM
+Skill6 not scrapped in page 226: jobcard 9 | 26:04:2023 - 03:15:32:PM
+Skill6 not scrapped in page 227: jobcard 9 | 26:04:2023 - 03:15:35:PM
+Skill6 not scrapped in page 228: jobcard 9 | 26:04:2023 - 03:15:37:PM
+Skill6 not scrapped in page 229: jobcard 9 | 26:04:2023 - 03:15:40:PM
+Skill6 not scrapped in page 230: jobcard 9 | 26:04:2023 - 03:15:44:PM
+Skill6 not scrapped in page 231: jobcard 9 | 26:04:2023 - 03:15:46:PM
+Skill6 not scrapped in page 232: jobcard 9 | 26:04:2023 - 03:15:50:PM
+Skill6 not scrapped in page 233: jobcard 9 | 26:04:2023 - 03:15:52:PM
+Skill6 not scrapped in page 234: jobcard 9 | 26:04:2023 - 03:15:55:PM
+Skill6 not scrapped in page 235: jobcard 9 | 26:04:2023 - 03:15:58:PM
+Skill6 not scrapped in page 236: jobcard 9 | 26:04:2023 - 03:16:01:PM
+Skill6 not scrapped in page 237: jobcard 9 | 26:04:2023 - 03:16:04:PM
+Skill6 not scrapped in page 238: jobcard 9 | 26:04:2023 - 03:16:07:PM
+Skill6 not scrapped in page 239: jobcard 9 | 26:04:2023 - 03:16:09:PM
+Skill6 not scrapped in page 240: jobcard 9 | 26:04:2023 - 03:16:12:PM
+Skill6 not scrapped in page 241: jobcard 9 | 26:04:2023 - 03:16:15:PM
+Skill6 not scrapped in page 242: jobcard 9 | 26:04:2023 - 03:16:18:PM
+Skill6 not scrapped in page 243: jobcard 9 | 26:04:2023 - 03:16:21:PM
+Skill6 not scrapped in page 244: jobcard 9 | 26:04:2023 - 03:16:23:PM
+Skill6 not scrapped in page 245: jobcard 9 | 26:04:2023 - 03:16:26:PM
+Skill6 not scrapped in page 246: jobcard 9 | 26:04:2023 - 03:16:29:PM
+Skill6 not scrapped in page 247: jobcard 9 | 26:04:2023 - 03:16:31:PM
+Skill6 not scrapped in page 248: jobcard 9 | 26:04:2023 - 03:16:34:PM
+Skill6 not scrapped in page 249: jobcard 9 | 26:04:2023 - 03:16:37:PM
+Skill6 not scrapped in page 250: jobcard 9 | 26:04:2023 - 03:16:40:PM
+Skill6 not scrapped in page 251: jobcard 9 | 26:04:2023 - 03:16:43:PM
+Skill6 not scrapped in page 252: jobcard 9 | 26:04:2023 - 03:16:45:PM
+Skill6 not scrapped in page 253: jobcard 9 | 26:04:2023 - 03:16:48:PM
+Skill6 not scrapped in page 254: jobcard 9 | 26:04:2023 - 03:16:51:PM
+Skill6 not scrapped in page 255: jobcard 9 | 26:04:2023 - 03:16:53:PM
+Skill6 not scrapped in page 256: jobcard 9 | 26:04:2023 - 03:16:56:PM
+Skill6 not scrapped in page 257: jobcard 9 | 26:04:2023 - 03:16:59:PM
+Skill6 not scrapped in page 258: jobcard 9 | 26:04:2023 - 03:17:02:PM
+Skill6 not scrapped in page 259: jobcard 9 | 26:04:2023 - 03:17:04:PM
+Skill6 not scrapped in page 260: jobcard 9 | 26:04:2023 - 03:17:07:PM
+Skill6 not scrapped in page 261: jobcard 9 | 26:04:2023 - 03:17:10:PM
+Skill6 not scrapped in page 262: jobcard 9 | 26:04:2023 - 03:17:12:PM
+Skill6 not scrapped in page 263: jobcard 9 | 26:04:2023 - 03:17:15:PM
+Skill6 not scrapped in page 264: jobcard 9 | 26:04:2023 - 03:17:18:PM
+Skill6 not scrapped in page 265: jobcard 9 | 26:04:2023 - 03:17:20:PM
+Skill6 not scrapped in page 266: jobcard 9 | 26:04:2023 - 03:17:23:PM
+Skill6 not scrapped in page 267: jobcard 9 | 26:04:2023 - 03:17:26:PM
+Skill6 not scrapped in page 268: jobcard 9 | 26:04:2023 - 03:17:28:PM
+Skill6 not scrapped in page 269: jobcard 9 | 26:04:2023 - 03:17:31:PM
+Skill6 not scrapped in page 270: jobcard 9 | 26:04:2023 - 03:17:34:PM
+Skill6 not scrapped in page 271: jobcard 9 | 26:04:2023 - 03:17:36:PM
+Skill6 not scrapped in page 272: jobcard 9 | 26:04:2023 - 03:17:39:PM
+Skill6 not scrapped in page 273: jobcard 9 | 26:04:2023 - 03:17:42:PM
+Skill6 not scrapped in page 274: jobcard 9 | 26:04:2023 - 03:17:44:PM
+Skill6 not scrapped in page 275: jobcard 9 | 26:04:2023 - 03:17:47:PM
+Skill6 not scrapped in page 276: jobcard 9 | 26:04:2023 - 03:17:50:PM
+Skill6 not scrapped in page 277: jobcard 9 | 26:04:2023 - 03:17:52:PM
+Skill6 not scrapped in page 278: jobcard 9 | 26:04:2023 - 03:17:55:PM
+Skill6 not scrapped in page 279: jobcard 9 | 26:04:2023 - 03:17:58:PM
+Skill6 not scrapped in page 280: jobcard 9 | 26:04:2023 - 03:18:01:PM
+Skill6 not scrapped in page 281: jobcard 9 | 26:04:2023 - 03:18:03:PM
+Skill6 not scrapped in page 282: jobcard 9 | 26:04:2023 - 03:18:06:PM
+Skill6 not scrapped in page 283: jobcard 9 | 26:04:2023 - 03:18:09:PM
+Skill6 not scrapped in page 284: jobcard 9 | 26:04:2023 - 03:18:11:PM
+Skill6 not scrapped in page 285: jobcard 9 | 26:04:2023 - 03:18:14:PM
+Skill6 not scrapped in page 286: jobcard 9 | 26:04:2023 - 03:18:17:PM
+Skill6 not scrapped in page 287: jobcard 9 | 26:04:2023 - 03:18:19:PM
+Skill6 not scrapped in page 288: jobcard 9 | 26:04:2023 - 03:18:22:PM
+Skill6 not scrapped in page 289: jobcard 9 | 26:04:2023 - 03:18:25:PM
+Skill6 not scrapped in page 290: jobcard 9 | 26:04:2023 - 03:18:27:PM
+Skill6 not scrapped in page 291: jobcard 9 | 26:04:2023 - 03:18:30:PM
+Skill6 not scrapped in page 292: jobcard 9 | 26:04:2023 - 03:18:33:PM
+Skill6 not scrapped in page 293: jobcard 9 | 26:04:2023 - 03:18:36:PM
+Skill6 not scrapped in page 294: jobcard 9 | 26:04:2023 - 03:18:38:PM
+Skill6 not scrapped in page 295: jobcard 9 | 26:04:2023 - 03:18:41:PM
+Skill6 not scrapped in page 296: jobcard 9 | 26:04:2023 - 03:18:44:PM
+Skill6 not scrapped in page 297: jobcard 9 | 26:04:2023 - 03:18:46:PM
+Skill6 not scrapped in page 298: jobcard 9 | 26:04:2023 - 03:18:49:PM
+Skill6 not scrapped in page 299: jobcard 9 | 26:04:2023 - 03:18:52:PM
+Skill6 not scrapped in page 300: jobcard 9 | 26:04:2023 - 03:18:54:PM
+Skill6 not scrapped in page 301: jobcard 9 | 26:04:2023 - 03:18:57:PM
+Skill6 not scrapped in page 302: jobcard 9 | 26:04:2023 - 03:19:00:PM
+Skill6 not scrapped in page 303: jobcard 9 | 26:04:2023 - 03:19:02:PM
+Skill6 not scrapped in page 304: jobcard 9 | 26:04:2023 - 03:19:05:PM
+Skill6 not scrapped in page 305: jobcard 9 | 26:04:2023 - 03:19:08:PM
+Skill6 not scrapped in page 306: jobcard 9 | 26:04:2023 - 03:19:11:PM
+Skill6 not scrapped in page 307: jobcard 9 | 26:04:2023 - 03:19:13:PM
+Skill6 not scrapped in page 308: jobcard 9 | 26:04:2023 - 03:19:16:PM
+Skill6 not scrapped in page 309: jobcard 9 | 26:04:2023 - 03:19:19:PM
+Skill6 not scrapped in page 310: jobcard 9 | 26:04:2023 - 03:19:21:PM
+Skill6 not scrapped in page 311: jobcard 9 | 26:04:2023 - 03:19:24:PM
+Skill6 not scrapped in page 312: jobcard 9 | 26:04:2023 - 03:19:27:PM
+Skill6 not scrapped in page 313: jobcard 9 | 26:04:2023 - 03:19:29:PM
+Skill6 not scrapped in page 314: jobcard 9 | 26:04:2023 - 03:19:32:PM
+Skill6 not scrapped in page 315: jobcard 9 | 26:04:2023 - 03:19:35:PM
+Skill6 not scrapped in page 316: jobcard 9 | 26:04:2023 - 03:19:37:PM
+Skill6 not scrapped in page 317: jobcard 9 | 26:04:2023 - 03:19:40:PM
+Skill6 not scrapped in page 318: jobcard 9 | 26:04:2023 - 03:19:43:PM
+Skill6 not scrapped in page 319: jobcard 9 | 26:04:2023 - 03:19:46:PM
+Skill6 not scrapped in page 320: jobcard 9 | 26:04:2023 - 03:19:48:PM
+Skill6 not scrapped in page 321: jobcard 9 | 26:04:2023 - 03:19:51:PM
+Skill6 not scrapped in page 322: jobcard 9 | 26:04:2023 - 03:19:54:PM
+Skill6 not scrapped in page 323: jobcard 9 | 26:04:2023 - 03:19:56:PM
+Skill6 not scrapped in page 324: jobcard 9 | 26:04:2023 - 03:19:59:PM
+Skill6 not scrapped in page 325: jobcard 9 | 26:04:2023 - 03:20:02:PM
+Skill6 not scrapped in page 326: jobcard 9 | 26:04:2023 - 03:20:04:PM
+Skill6 not scrapped in page 327: jobcard 9 | 26:04:2023 - 03:20:07:PM
+Skill6 not scrapped in page 328: jobcard 9 | 26:04:2023 - 03:20:10:PM
+Skill6 not scrapped in page 329: jobcard 9 | 26:04:2023 - 03:20:12:PM
+Skill6 not scrapped in page 330: jobcard 9 | 26:04:2023 - 03:20:15:PM
+Skill6 not scrapped in page 331: jobcard 9 | 26:04:2023 - 03:20:18:PM
+Skill6 not scrapped in page 332: jobcard 9 | 26:04:2023 - 03:20:21:PM
+Skill6 not scrapped in page 333: jobcard 9 | 26:04:2023 - 03:20:23:PM
+Skill6 not scrapped in page 334: jobcard 9 | 26:04:2023 - 03:20:26:PM
+Skill6 not scrapped in page 335: jobcard 9 | 26:04:2023 - 03:20:29:PM
+Skill6 not scrapped in page 336: jobcard 9 | 26:04:2023 - 03:20:31:PM
+Skill6 not scrapped in page 337: jobcard 9 | 26:04:2023 - 03:20:34:PM
+Skill6 not scrapped in page 338: jobcard 9 | 26:04:2023 - 03:20:37:PM
+Skill6 not scrapped in page 339: jobcard 9 | 26:04:2023 - 03:20:39:PM
+Skill6 not scrapped in page 340: jobcard 9 | 26:04:2023 - 03:20:42:PM
+Skill6 not scrapped in page 341: jobcard 9 | 26:04:2023 - 03:20:45:PM
+Skill6 not scrapped in page 342: jobcard 9 | 26:04:2023 - 03:20:47:PM
+Skill6 not scrapped in page 343: jobcard 9 | 26:04:2023 - 03:20:50:PM
+Skill6 not scrapped in page 344: jobcard 9 | 26:04:2023 - 03:20:53:PM
+Skill6 not scrapped in page 345: jobcard 9 | 26:04:2023 - 03:20:56:PM
+Skill6 not scrapped in page 346: jobcard 9 | 26:04:2023 - 03:20:58:PM
+Skill6 not scrapped in page 347: jobcard 9 | 26:04:2023 - 03:21:01:PM
+Skill6 not scrapped in page 348: jobcard 9 | 26:04:2023 - 03:21:03:PM
+Skill6 not scrapped in page 349: jobcard 9 | 26:04:2023 - 03:21:06:PM
+Skill6 not scrapped in page 350: jobcard 9 | 26:04:2023 - 03:21:09:PM
+Skill6 not scrapped in page 351: jobcard 9 | 26:04:2023 - 03:21:11:PM
+Skill6 not scrapped in page 352: jobcard 9 | 26:04:2023 - 03:21:14:PM
+Skill6 not scrapped in page 353: jobcard 9 | 26:04:2023 - 03:21:16:PM
+Skill6 not scrapped in page 354: jobcard 9 | 26:04:2023 - 03:21:19:PM
+Skill6 not scrapped in page 355: jobcard 9 | 26:04:2023 - 03:21:21:PM
+Skill6 not scrapped in page 356: jobcard 9 | 26:04:2023 - 03:21:24:PM
+Skill6 not scrapped in page 357: jobcard 9 | 26:04:2023 - 03:21:27:PM
+Skill6 not scrapped in page 358: jobcard 9 | 26:04:2023 - 03:21:29:PM
+Skill6 not scrapped in page 359: jobcard 9 | 26:04:2023 - 03:21:32:PM
+Skill6 not scrapped in page 360: jobcard 9 | 26:04:2023 - 03:21:34:PM
+Skill6 not scrapped in page 361: jobcard 9 | 26:04:2023 - 03:21:37:PM
+Skill6 not scrapped in page 362: jobcard 9 | 26:04:2023 - 03:21:39:PM
+Skill6 not scrapped in page 363: jobcard 9 | 26:04:2023 - 03:21:42:PM
+Skill6 not scrapped in page 364: jobcard 9 | 26:04:2023 - 03:21:45:PM
+Skill6 not scrapped in page 365: jobcard 9 | 26:04:2023 - 03:21:47:PM
+Skill6 not scrapped in page 366: jobcard 9 | 26:04:2023 - 03:21:50:PM
+Skill6 not scrapped in page 367: jobcard 9 | 26:04:2023 - 03:21:52:PM
+Skill6 not scrapped in page 368: jobcard 9 | 26:04:2023 - 03:21:55:PM
+Skill6 not scrapped in page 369: jobcard 9 | 26:04:2023 - 03:21:58:PM
+Skill6 not scrapped in page 370: jobcard 9 | 26:04:2023 - 03:22:00:PM
+Skill6 not scrapped in page 371: jobcard 9 | 26:04:2023 - 03:22:03:PM
+Skill6 not scrapped in page 372: jobcard 9 | 26:04:2023 - 03:22:05:PM
+Skill6 not scrapped in page 373: jobcard 9 | 26:04:2023 - 03:22:08:PM
+Skill6 not scrapped in page 374: jobcard 9 | 26:04:2023 - 03:22:10:PM
+Skill6 not scrapped in page 375: jobcard 9 | 26:04:2023 - 03:22:13:PM
+Skill6 not scrapped in page 376: jobcard 9 | 26:04:2023 - 03:22:16:PM
+Skill6 not scrapped in page 377: jobcard 9 | 26:04:2023 - 03:22:18:PM
+Skill6 not scrapped in page 378: jobcard 9 | 26:04:2023 - 03:22:21:PM
+Skill6 not scrapped in page 379: jobcard 9 | 26:04:2023 - 03:22:23:PM
+Skill6 not scrapped in page 380: jobcard 9 | 26:04:2023 - 03:22:26:PM
+Skill6 not scrapped in page 381: jobcard 9 | 26:04:2023 - 03:22:29:PM
+Skill6 not scrapped in page 382: jobcard 9 | 26:04:2023 - 03:22:31:PM
+Skill6 not scrapped in page 383: jobcard 9 | 26:04:2023 - 03:22:34:PM
+Skill6 not scrapped in page 384: jobcard 9 | 26:04:2023 - 03:22:36:PM
+Skill6 not scrapped in page 385: jobcard 9 | 26:04:2023 - 03:22:39:PM
+Skill6 not scrapped in page 386: jobcard 9 | 26:04:2023 - 03:22:41:PM
+Skill6 not scrapped in page 387: jobcard 9 | 26:04:2023 - 03:22:44:PM
+Skill6 not scrapped in page 388: jobcard 9 | 26:04:2023 - 03:22:47:PM
+Skill6 not scrapped in page 389: jobcard 9 | 26:04:2023 - 03:22:49:PM
+Skill6 not scrapped in page 390: jobcard 9 | 26:04:2023 - 03:22:52:PM
+Skill6 not scrapped in page 391: jobcard 9 | 26:04:2023 - 03:22:54:PM
+Skill6 not scrapped in page 392: jobcard 9 | 26:04:2023 - 03:22:57:PM
+Skill6 not scrapped in page 393: jobcard 9 | 26:04:2023 - 03:23:00:PM
+Skill6 not scrapped in page 394: jobcard 9 | 26:04:2023 - 03:23:02:PM
+Skill6 not scrapped in page 395: jobcard 9 | 26:04:2023 - 03:23:05:PM
+Skill6 not scrapped in page 396: jobcard 9 | 26:04:2023 - 03:23:08:PM
+Skill6 not scrapped in page 397: jobcard 9 | 26:04:2023 - 03:23:11:PM
+Skill6 not scrapped in page 398: jobcard 9 | 26:04:2023 - 03:23:14:PM
+Skill6 not scrapped in page 399: jobcard 9 | 26:04:2023 - 03:23:16:PM
+Skill6 not scrapped in page 400: jobcard 9 | 26:04:2023 - 03:23:19:PM
+Skill6 not scrapped in page 401: jobcard 9 | 26:04:2023 - 03:23:22:PM
+Skill6 not scrapped in page 402: jobcard 9 | 26:04:2023 - 03:23:25:PM
+Skill6 not scrapped in page 403: jobcard 9 | 26:04:2023 - 03:23:27:PM
+Skill6 not scrapped in page 404: jobcard 9 | 26:04:2023 - 03:23:30:PM
+Skill6 not scrapped in page 405: jobcard 9 | 26:04:2023 - 03:23:33:PM
+Skill6 not scrapped in page 406: jobcard 9 | 26:04:2023 - 03:23:35:PM
+Skill6 not scrapped in page 407: jobcard 9 | 26:04:2023 - 03:23:38:PM
+Skill6 not scrapped in page 408: jobcard 9 | 26:04:2023 - 03:23:40:PM
+Skill6 not scrapped in page 409: jobcard 9 | 26:04:2023 - 03:23:43:PM
+Skill6 not scrapped in page 410: jobcard 9 | 26:04:2023 - 03:23:46:PM
+Skill6 not scrapped in page 411: jobcard 9 | 26:04:2023 - 03:23:48:PM
+Skill6 not scrapped in page 412: jobcard 9 | 26:04:2023 - 03:23:51:PM
+Skill6 not scrapped in page 413: jobcard 9 | 26:04:2023 - 03:23:53:PM
+Skill6 not scrapped in page 414: jobcard 9 | 26:04:2023 - 03:23:56:PM
+Skill6 not scrapped in page 415: jobcard 9 | 26:04:2023 - 03:23:58:PM
+Skill6 not scrapped in page 416: jobcard 9 | 26:04:2023 - 03:24:01:PM
+Skill6 not scrapped in page 417: jobcard 9 | 26:04:2023 - 03:24:04:PM
+Skill6 not scrapped in page 418: jobcard 9 | 26:04:2023 - 03:24:06:PM
+Skill6 not scrapped in page 419: jobcard 9 | 26:04:2023 - 03:24:09:PM
+Skill6 not scrapped in page 420: jobcard 9 | 26:04:2023 - 03:24:11:PM
+Skill6 not scrapped in page 421: jobcard 9 | 26:04:2023 - 03:24:14:PM
+Skill6 not scrapped in page 422: jobcard 9 | 26:04:2023 - 03:24:17:PM
+Skill6 not scrapped in page 423: jobcard 9 | 26:04:2023 - 03:24:19:PM
+Skill6 not scrapped in page 424: jobcard 9 | 26:04:2023 - 03:24:22:PM
+Skill6 not scrapped in page 425: jobcard 9 | 26:04:2023 - 03:24:24:PM
+Skill6 not scrapped in page 426: jobcard 9 | 26:04:2023 - 03:24:27:PM
+Skill6 not scrapped in page 427: jobcard 9 | 26:04:2023 - 03:24:29:PM
+Skill6 not scrapped in page 428: jobcard 9 | 26:04:2023 - 03:24:32:PM
+Skill6 not scrapped in page 429: jobcard 9 | 26:04:2023 - 03:24:35:PM
+Skill6 not scrapped in page 430: jobcard 9 | 26:04:2023 - 03:24:37:PM
+Skill6 not scrapped in page 431: jobcard 9 | 26:04:2023 - 03:24:40:PM
+Skill6 not scrapped in page 432: jobcard 9 | 26:04:2023 - 03:24:42:PM
+Skill6 not scrapped in page 433: jobcard 9 | 26:04:2023 - 03:24:45:PM
+Skill6 not scrapped in page 434: jobcard 9 | 26:04:2023 - 03:24:48:PM
+Skill6 not scrapped in page 435: jobcard 9 | 26:04:2023 - 03:24:50:PM
+Skill6 not scrapped in page 436: jobcard 9 | 26:04:2023 - 03:24:53:PM
+Skill6 not scrapped in page 437: jobcard 9 | 26:04:2023 - 03:24:55:PM
+Skill6 not scrapped in page 438: jobcard 9 | 26:04:2023 - 03:24:58:PM
+Skill6 not scrapped in page 439: jobcard 9 | 26:04:2023 - 03:25:00:PM
+Skill6 not scrapped in page 440: jobcard 9 | 26:04:2023 - 03:25:03:PM
+Skill6 not scrapped in page 441: jobcard 9 | 26:04:2023 - 03:25:06:PM
+Skill6 not scrapped in page 442: jobcard 9 | 26:04:2023 - 03:25:08:PM
+Skill6 not scrapped in page 443: jobcard 9 | 26:04:2023 - 03:25:11:PM
+Skill6 not scrapped in page 444: jobcard 9 | 26:04:2023 - 03:25:13:PM
+Skill6 not scrapped in page 445: jobcard 9 | 26:04:2023 - 03:25:16:PM
+Skill6 not scrapped in page 446: jobcard 9 | 26:04:2023 - 03:25:18:PM
+Skill6 not scrapped in page 447: jobcard 9 | 26:04:2023 - 03:25:21:PM
+Skill6 not scrapped in page 448: jobcard 9 | 26:04:2023 - 03:25:24:PM
+Skill6 not scrapped in page 449: jobcard 9 | 26:04:2023 - 03:25:26:PM
+Skill6 not scrapped in page 450: jobcard 9 | 26:04:2023 - 03:25:29:PM
+Skill6 not scrapped in page 451: jobcard 9 | 26:04:2023 - 03:25:31:PM
+Skill6 not scrapped in page 452: jobcard 9 | 26:04:2023 - 03:25:34:PM
+Skill6 not scrapped in page 453: jobcard 9 | 26:04:2023 - 03:25:36:PM
+Skill6 not scrapped in page 454: jobcard 9 | 26:04:2023 - 03:25:39:PM
+Skill6 not scrapped in page 455: jobcard 9 | 26:04:2023 - 03:25:42:PM
+Skill6 not scrapped in page 456: jobcard 9 | 26:04:2023 - 03:25:44:PM
+Skill6 not scrapped in page 457: jobcard 9 | 26:04:2023 - 03:25:47:PM
+Skill6 not scrapped in page 458: jobcard 9 | 26:04:2023 - 03:25:49:PM
+Skill6 not scrapped in page 459: jobcard 9 | 26:04:2023 - 03:25:52:PM
+Skill6 not scrapped in page 460: jobcard 9 | 26:04:2023 - 03:25:55:PM
+Skill6 not scrapped in page 461: jobcard 9 | 26:04:2023 - 03:25:57:PM
+Skill6 not scrapped in page 462: jobcard 9 | 26:04:2023 - 03:26:00:PM
+Skill6 not scrapped in page 463: jobcard 9 | 26:04:2023 - 03:26:02:PM
+Skill6 not scrapped in page 464: jobcard 9 | 26:04:2023 - 03:26:05:PM
+Skill6 not scrapped in page 465: jobcard 9 | 26:04:2023 - 03:26:08:PM
+Skill6 not scrapped in page 466: jobcard 9 | 26:04:2023 - 03:26:10:PM
+Skill6 not scrapped in page 467: jobcard 9 | 26:04:2023 - 03:26:13:PM
+Skill6 not scrapped in page 468: jobcard 9 | 26:04:2023 - 03:26:15:PM
+Skill6 not scrapped in page 469: jobcard 9 | 26:04:2023 - 03:26:18:PM
+Skill6 not scrapped in page 470: jobcard 9 | 26:04:2023 - 03:26:21:PM
+Skill6 not scrapped in page 471: jobcard 9 | 26:04:2023 - 03:26:23:PM
+Skill6 not scrapped in page 472: jobcard 9 | 26:04:2023 - 03:26:26:PM
+Skill6 not scrapped in page 473: jobcard 9 | 26:04:2023 - 03:26:28:PM
+Skill6 not scrapped in page 474: jobcard 9 | 26:04:2023 - 03:26:31:PM
+Skill6 not scrapped in page 475: jobcard 9 | 26:04:2023 - 03:26:33:PM
+Skill6 not scrapped in page 476: jobcard 9 | 26:04:2023 - 03:26:36:PM
+Skill6 not scrapped in page 477: jobcard 9 | 26:04:2023 - 03:26:39:PM
+Skill6 not scrapped in page 478: jobcard 9 | 26:04:2023 - 03:26:41:PM
+Skill6 not scrapped in page 479: jobcard 9 | 26:04:2023 - 03:26:44:PM
+Skill6 not scrapped in page 480: jobcard 9 | 26:04:2023 - 03:26:46:PM
+Skill6 not scrapped in page 481: jobcard 9 | 26:04:2023 - 03:26:49:PM
+Skill6 not scrapped in page 482: jobcard 9 | 26:04:2023 - 03:26:51:PM
+Skill6 not scrapped in page 483: jobcard 9 | 26:04:2023 - 03:26:54:PM
+Skill6 not scrapped in page 484: jobcard 9 | 26:04:2023 - 03:26:57:PM
+Skill6 not scrapped in page 485: jobcard 9 | 26:04:2023 - 03:26:59:PM
+Skill6 not scrapped in page 486: jobcard 9 | 26:04:2023 - 03:27:02:PM
+Skill6 not scrapped in page 487: jobcard 9 | 26:04:2023 - 03:27:04:PM
+Skill6 not scrapped in page 488: jobcard 9 | 26:04:2023 - 03:27:07:PM
+Skill6 not scrapped in page 489: jobcard 9 | 26:04:2023 - 03:27:10:PM
+Skill6 not scrapped in page 490: jobcard 9 | 26:04:2023 - 03:27:12:PM
+Skill6 not scrapped in page 491: jobcard 9 | 26:04:2023 - 03:27:15:PM
+Skill6 not scrapped in page 492: jobcard 9 | 26:04:2023 - 03:27:17:PM
+Skill6 not scrapped in page 493: jobcard 9 | 26:04:2023 - 03:27:20:PM
+Skill6 not scrapped in page 494: jobcard 9 | 26:04:2023 - 03:27:23:PM
+Skill6 not scrapped in page 495: jobcard 9 | 26:04:2023 - 03:27:25:PM
+Skill6 not scrapped in page 496: jobcard 9 | 26:04:2023 - 03:27:28:PM
+Skill6 not scrapped in page 497: jobcard 9 | 26:04:2023 - 03:27:30:PM
+Skill6 not scrapped in page 498: jobcard 9 | 26:04:2023 - 03:27:33:PM
+Skill6 not scrapped in page 499: jobcard 9 | 26:04:2023 - 03:27:35:PM
+Skill6 not scrapped in page 500: jobcard 9 | 26:04:2023 - 03:27:38:PM
+Skill6 not scrapped in page 501: jobcard 9 | 26:04:2023 - 03:27:41:PM
+Skill6 not scrapped in page 502: jobcard 9 | 26:04:2023 - 03:27:43:PM
+Skill6 not scrapped in page 503: jobcard 9 | 26:04:2023 - 03:27:46:PM
+Skill6 not scrapped in page 504: jobcard 9 | 26:04:2023 - 03:27:48:PM
+Skill6 not scrapped in page 505: jobcard 9 | 26:04:2023 - 03:27:51:PM
+Skill6 not scrapped in page 506: jobcard 9 | 26:04:2023 - 03:27:54:PM
+Skill6 not scrapped in page 507: jobcard 9 | 26:04:2023 - 03:27:56:PM
+Skill6 not scrapped in page 508: jobcard 9 | 26:04:2023 - 03:27:59:PM
+Skill6 not scrapped in page 509: jobcard 9 | 26:04:2023 - 03:28:01:PM
+Skill6 not scrapped in page 510: jobcard 9 | 26:04:2023 - 03:28:04:PM
+Skill6 not scrapped in page 511: jobcard 9 | 26:04:2023 - 03:28:06:PM
+Skill6 not scrapped in page 512: jobcard 9 | 26:04:2023 - 03:28:09:PM
+Skill6 not scrapped in page 513: jobcard 9 | 26:04:2023 - 03:28:12:PM
+Skill6 not scrapped in page 514: jobcard 9 | 26:04:2023 - 03:28:14:PM
+Skill6 not scrapped in page 515: jobcard 9 | 26:04:2023 - 03:28:17:PM
+Skill6 not scrapped in page 516: jobcard 9 | 26:04:2023 - 03:28:19:PM
+Skill6 not scrapped in page 517: jobcard 9 | 26:04:2023 - 03:28:22:PM
+Skill6 not scrapped in page 518: jobcard 9 | 26:04:2023 - 03:28:25:PM
+Skill6 not scrapped in page 519: jobcard 9 | 26:04:2023 - 03:28:27:PM
+Skill6 not scrapped in page 520: jobcard 9 | 26:04:2023 - 03:28:30:PM
+Skill6 not scrapped in page 521: jobcard 9 | 26:04:2023 - 03:28:32:PM
+Skill6 not scrapped in page 522: jobcard 9 | 26:04:2023 - 03:28:35:PM
+Skill6 not scrapped in page 523: jobcard 9 | 26:04:2023 - 03:28:37:PM
+Skill6 not scrapped in page 524: jobcard 9 | 26:04:2023 - 03:28:40:PM
+Skill6 not scrapped in page 525: jobcard 9 | 26:04:2023 - 03:28:42:PM
+Skill6 not scrapped in page 526: jobcard 9 | 26:04:2023 - 03:28:45:PM
+Skill6 not scrapped in page 527: jobcard 9 | 26:04:2023 - 03:28:48:PM
+Skill6 not scrapped in page 528: jobcard 9 | 26:04:2023 - 03:28:50:PM
+Skill6 not scrapped in page 529: jobcard 9 | 26:04:2023 - 03:28:53:PM
+Skill6 not scrapped in page 530: jobcard 9 | 26:04:2023 - 03:28:55:PM
+Skill6 not scrapped in page 531: jobcard 9 | 26:04:2023 - 03:28:58:PM
+Skill6 not scrapped in page 532: jobcard 9 | 26:04:2023 - 03:29:00:PM
+Skill6 not scrapped in page 533: jobcard 9 | 26:04:2023 - 03:29:03:PM
+Skill6 not scrapped in page 534: jobcard 9 | 26:04:2023 - 03:29:06:PM
+Skill6 not scrapped in page 535: jobcard 9 | 26:04:2023 - 03:29:08:PM
+Skill6 not scrapped in page 536: jobcard 9 | 26:04:2023 - 03:29:11:PM
+Skill6 not scrapped in page 537: jobcard 9 | 26:04:2023 - 03:29:13:PM
+Skill6 not scrapped in page 538: jobcard 9 | 26:04:2023 - 03:29:16:PM
+Skill6 not scrapped in page 539: jobcard 9 | 26:04:2023 - 03:29:19:PM
+Skill6 not scrapped in page 540: jobcard 9 | 26:04:2023 - 03:29:21:PM
+Skill6 not scrapped in page 541: jobcard 9 | 26:04:2023 - 03:29:24:PM
+Skill6 not scrapped in page 542: jobcard 9 | 26:04:2023 - 03:29:26:PM
+Skill6 not scrapped in page 543: jobcard 9 | 26:04:2023 - 03:29:29:PM
+Skill6 not scrapped in page 544: jobcard 9 | 26:04:2023 - 03:29:31:PM
+Skill6 not scrapped in page 545: jobcard 9 | 26:04:2023 - 03:29:34:PM
+Skill6 not scrapped in page 546: jobcard 9 | 26:04:2023 - 03:29:37:PM
+Skill6 not scrapped in page 547: jobcard 9 | 26:04:2023 - 03:29:39:PM
+Skill6 not scrapped in page 548: jobcard 9 | 26:04:2023 - 03:29:42:PM
+Skill6 not scrapped in page 549: jobcard 9 | 26:04:2023 - 03:29:44:PM
+Skill6 not scrapped in page 550: jobcard 9 | 26:04:2023 - 03:29:47:PM
+Skill6 not scrapped in page 551: jobcard 9 | 26:04:2023 - 03:29:50:PM
+Skill6 not scrapped in page 552: jobcard 9 | 26:04:2023 - 03:29:53:PM
+Skill6 not scrapped in page 553: jobcard 9 | 26:04:2023 - 03:29:56:PM
+Skill6 not scrapped in page 554: jobcard 9 | 26:04:2023 - 03:29:58:PM
+Skill6 not scrapped in page 555: jobcard 9 | 26:04:2023 - 03:30:01:PM
+Skill6 not scrapped in page 556: jobcard 9 | 26:04:2023 - 03:30:03:PM
+Skill6 not scrapped in page 557: jobcard 9 | 26:04:2023 - 03:30:06:PM
+Skill6 not scrapped in page 558: jobcard 9 | 26:04:2023 - 03:30:09:PM
+Skill6 not scrapped in page 559: jobcard 9 | 26:04:2023 - 03:30:11:PM
+Skill6 not scrapped in page 560: jobcard 9 | 26:04:2023 - 03:30:14:PM
+Skill6 not scrapped in page 561: jobcard 9 | 26:04:2023 - 03:30:17:PM
+Skill6 not scrapped in page 562: jobcard 9 | 26:04:2023 - 03:30:19:PM
+Skill6 not scrapped in page 563: jobcard 9 | 26:04:2023 - 03:30:22:PM
+Skill6 not scrapped in page 564: jobcard 9 | 26:04:2023 - 03:30:24:PM
+Skill6 not scrapped in page 565: jobcard 9 | 26:04:2023 - 03:30:27:PM
+Skill6 not scrapped in page 566: jobcard 9 | 26:04:2023 - 03:30:30:PM
+Skill6 not scrapped in page 567: jobcard 9 | 26:04:2023 - 03:30:32:PM
+Skill6 not scrapped in page 568: jobcard 9 | 26:04:2023 - 03:30:35:PM
+Skill6 not scrapped in page 569: jobcard 9 | 26:04:2023 - 03:30:38:PM
+Skill6 not scrapped in page 570: jobcard 9 | 26:04:2023 - 03:30:41:PM
+Skill6 not scrapped in page 571: jobcard 9 | 26:04:2023 - 03:30:44:PM
+Skill6 not scrapped in page 572: jobcard 9 | 26:04:2023 - 03:30:46:PM
+Skill6 not scrapped in page 573: jobcard 9 | 26:04:2023 - 03:30:49:PM
+Skill6 not scrapped in page 574: jobcard 9 | 26:04:2023 - 03:30:52:PM
+Skill6 not scrapped in page 575: jobcard 9 | 26:04:2023 - 03:30:55:PM
+Skill6 not scrapped in page 576: jobcard 9 | 26:04:2023 - 03:30:57:PM
+Skill6 not scrapped in page 577: jobcard 9 | 26:04:2023 - 03:31:00:PM
+Skill6 not scrapped in page 578: jobcard 9 | 26:04:2023 - 03:31:02:PM
+Skill6 not scrapped in page 579: jobcard 9 | 26:04:2023 - 03:31:05:PM
+Skill6 not scrapped in page 580: jobcard 9 | 26:04:2023 - 03:31:07:PM
+Skill6 not scrapped in page 581: jobcard 9 | 26:04:2023 - 03:31:10:PM
+Skill6 not scrapped in page 582: jobcard 9 | 26:04:2023 - 03:31:12:PM
+Skill6 not scrapped in page 583: jobcard 9 | 26:04:2023 - 03:31:15:PM
+Skill6 not scrapped in page 584: jobcard 9 | 26:04:2023 - 03:31:18:PM
+Skill6 not scrapped in page 585: jobcard 9 | 26:04:2023 - 03:31:21:PM
+Skill6 not scrapped in page 586: jobcard 9 | 26:04:2023 - 03:31:24:PM
+Skill6 not scrapped in page 587: jobcard 9 | 26:04:2023 - 03:31:26:PM
+Skill6 not scrapped in page 588: jobcard 9 | 26:04:2023 - 03:31:29:PM
+Skill6 not scrapped in page 589: jobcard 9 | 26:04:2023 - 03:31:32:PM
+Skill6 not scrapped in page 590: jobcard 9 | 26:04:2023 - 03:31:34:PM
+Skill6 not scrapped in page 591: jobcard 9 | 26:04:2023 - 03:31:37:PM
+Skill6 not scrapped in page 592: jobcard 9 | 26:04:2023 - 03:31:39:PM
+Skill6 not scrapped in page 593: jobcard 9 | 26:04:2023 - 03:31:42:PM
+Skill6 not scrapped in page 594: jobcard 9 | 26:04:2023 - 03:31:45:PM
+Skill6 not scrapped in page 595: jobcard 9 | 26:04:2023 - 03:31:47:PM
+Skill6 not scrapped in page 596: jobcard 9 | 26:04:2023 - 03:31:50:PM
+Skill6 not scrapped in page 597: jobcard 9 | 26:04:2023 - 03:31:52:PM
+Skill6 not scrapped in page 598: jobcard 9 | 26:04:2023 - 03:31:55:PM
+Skill6 not scrapped in page 599: jobcard 9 | 26:04:2023 - 03:31:58:PM
+Skill6 not scrapped in page 600: jobcard 9 | 26:04:2023 - 03:32:00:PM
+Skill6 not scrapped in page 601: jobcard 9 | 26:04:2023 - 03:32:03:PM
+Skill6 not scrapped in page 602: jobcard 9 | 26:04:2023 - 03:32:06:PM
+Skill6 not scrapped in page 603: jobcard 9 | 26:04:2023 - 03:32:08:PM
+Skill6 not scrapped in page 604: jobcard 9 | 26:04:2023 - 03:32:11:PM
+Skill6 not scrapped in page 605: jobcard 9 | 26:04:2023 - 03:32:14:PM
+Skill6 not scrapped in page 606: jobcard 9 | 26:04:2023 - 03:32:17:PM
+Skill6 not scrapped in page 607: jobcard 9 | 26:04:2023 - 03:32:20:PM
+Skill6 not scrapped in page 608: jobcard 9 | 26:04:2023 - 03:32:23:PM
+Skill6 not scrapped in page 609: jobcard 9 | 26:04:2023 - 03:32:26:PM
+Skill6 not scrapped in page 610: jobcard 9 | 26:04:2023 - 03:32:29:PM
+Skill6 not scrapped in page 611: jobcard 9 | 26:04:2023 - 03:32:32:PM
+Skill6 not scrapped in page 612: jobcard 9 | 26:04:2023 - 03:32:35:PM
+Skill6 not scrapped in page 613: jobcard 9 | 26:04:2023 - 03:32:38:PM
+Skill6 not scrapped in page 614: jobcard 9 | 26:04:2023 - 03:32:41:PM
+Skill6 not scrapped in page 615: jobcard 9 | 26:04:2023 - 03:32:44:PM
+Skill6 not scrapped in page 616: jobcard 9 | 26:04:2023 - 03:32:46:PM
+Skill6 not scrapped in page 617: jobcard 9 | 26:04:2023 - 03:32:49:PM
+Skill6 not scrapped in page 618: jobcard 9 | 26:04:2023 - 03:32:52:PM
+Skill6 not scrapped in page 619: jobcard 9 | 26:04:2023 - 03:32:55:PM
+Skill6 not scrapped in page 620: jobcard 9 | 26:04:2023 - 03:32:58:PM
+Skill6 not scrapped in page 621: jobcard 9 | 26:04:2023 - 03:33:01:PM
+Skill6 not scrapped in page 622: jobcard 9 | 26:04:2023 - 03:33:04:PM
+Skill6 not scrapped in page 623: jobcard 9 | 26:04:2023 - 03:33:07:PM
+Skill6 not scrapped in page 624: jobcard 9 | 26:04:2023 - 03:33:10:PM
+Skill6 not scrapped in page 625: jobcard 9 | 26:04:2023 - 03:33:13:PM
+Skill6 not scrapped in page 626: jobcard 9 | 26:04:2023 - 03:33:16:PM
+Skill6 not scrapped in page 627: jobcard 9 | 26:04:2023 - 03:33:19:PM
+Skill6 not scrapped in page 628: jobcard 9 | 26:04:2023 - 03:33:21:PM
+Skill6 not scrapped in page 629: jobcard 9 | 26:04:2023 - 03:33:24:PM
+Skill6 not scrapped in page 630: jobcard 9 | 26:04:2023 - 03:33:27:PM
+Skill6 not scrapped in page 631: jobcard 9 | 26:04:2023 - 03:33:31:PM
+Skill6 not scrapped in page 632: jobcard 9 | 26:04:2023 - 03:33:34:PM
+Skill6 not scrapped in page 633: jobcard 9 | 26:04:2023 - 03:33:37:PM
+Skill6 not scrapped in page 634: jobcard 9 | 26:04:2023 - 03:33:40:PM
+Skill6 not scrapped in page 635: jobcard 9 | 26:04:2023 - 03:33:43:PM
+Skill6 not scrapped in page 636: jobcard 9 | 26:04:2023 - 03:33:46:PM
+Skill6 not scrapped in page 637: jobcard 9 | 26:04:2023 - 03:33:49:PM
+Skill6 not scrapped in page 638: jobcard 9 | 26:04:2023 - 03:33:51:PM
+Skill6 not scrapped in page 639: jobcard 9 | 26:04:2023 - 03:33:54:PM
+Skill6 not scrapped in page 640: jobcard 9 | 26:04:2023 - 03:33:57:PM
+Skill6 not scrapped in page 641: jobcard 9 | 26:04:2023 - 03:33:59:PM
+Skill6 not scrapped in page 642: jobcard 9 | 26:04:2023 - 03:34:02:PM
+Skill6 not scrapped in page 643: jobcard 9 | 26:04:2023 - 03:34:05:PM
+Skill6 not scrapped in page 644: jobcard 9 | 26:04:2023 - 03:34:08:PM
+Skill6 not scrapped in page 645: jobcard 9 | 26:04:2023 - 03:34:10:PM
+Skill6 not scrapped in page 646: jobcard 9 | 26:04:2023 - 03:34:13:PM
+Skill6 not scrapped in page 647: jobcard 9 | 26:04:2023 - 03:34:16:PM
+Skill6 not scrapped in page 648: jobcard 9 | 26:04:2023 - 03:34:18:PM
+Skill6 not scrapped in page 649: jobcard 9 | 26:04:2023 - 03:34:21:PM
+Skill6 not scrapped in page 650: jobcard 9 | 26:04:2023 - 03:34:24:PM
+Skill6 not scrapped in page 651: jobcard 9 | 26:04:2023 - 03:34:27:PM
+Skill6 not scrapped in page 652: jobcard 9 | 26:04:2023 - 03:34:29:PM
+Skill6 not scrapped in page 653: jobcard 9 | 26:04:2023 - 03:34:32:PM
+Skill6 not scrapped in page 654: jobcard 9 | 26:04:2023 - 03:34:35:PM
+Skill6 not scrapped in page 655: jobcard 9 | 26:04:2023 - 03:34:37:PM
+Skill6 not scrapped in page 656: jobcard 9 | 26:04:2023 - 03:34:40:PM
+Skill6 not scrapped in page 657: jobcard 9 | 26:04:2023 - 03:34:43:PM
+Skill6 not scrapped in page 658: jobcard 9 | 26:04:2023 - 03:34:45:PM
+Skill6 not scrapped in page 659: jobcard 9 | 26:04:2023 - 03:34:48:PM
+Skill6 not scrapped in page 660: jobcard 9 | 26:04:2023 - 03:34:51:PM
+Skill6 not scrapped in page 661: jobcard 9 | 26:04:2023 - 03:34:53:PM
+Skill6 not scrapped in page 662: jobcard 9 | 26:04:2023 - 03:34:56:PM
+Skill6 not scrapped in page 663: jobcard 9 | 26:04:2023 - 03:34:59:PM
+Skill6 not scrapped in page 664: jobcard 9 | 26:04:2023 - 03:35:02:PM
+Skill6 not scrapped in page 665: jobcard 9 | 26:04:2023 - 03:35:04:PM
+Skill6 not scrapped in page 666: jobcard 9 | 26:04:2023 - 03:35:07:PM
+Skill6 not scrapped in page 667: jobcard 9 | 26:04:2023 - 03:35:09:PM
+Skill6 not scrapped in page 668: jobcard 9 | 26:04:2023 - 03:35:13:PM
+Skill6 not scrapped in page 669: jobcard 9 | 26:04:2023 - 03:35:18:PM
+Skill6 not scrapped in page 670: jobcard 9 | 26:04:2023 - 03:35:22:PM
+Skill6 not scrapped in page 671: jobcard 9 | 26:04:2023 - 03:35:27:PM
+Skill6 not scrapped in page 672: jobcard 9 | 26:04:2023 - 03:35:32:PM
+Skill6 not scrapped in page 673: jobcard 9 | 26:04:2023 - 03:35:37:PM
+Skill6 not scrapped in page 674: jobcard 9 | 26:04:2023 - 03:35:42:PM
+Skill6 not scrapped in page 675: jobcard 9 | 26:04:2023 - 03:35:47:PM
+Skill6 not scrapped in page 676: jobcard 9 | 26:04:2023 - 03:35:52:PM
+Skill6 not scrapped in page 677: jobcard 9 | 26:04:2023 - 03:35:56:PM
+Skill6 not scrapped in page 678: jobcard 9 | 26:04:2023 - 03:36:01:PM
+Skill6 not scrapped in page 679: jobcard 9 | 26:04:2023 - 03:36:06:PM
+Skill6 not scrapped in page 680: jobcard 9 | 26:04:2023 - 03:36:11:PM
+Skill6 not scrapped in page 681: jobcard 9 | 26:04:2023 - 03:36:15:PM
+Skill6 not scrapped in page 682: jobcard 9 | 26:04:2023 - 03:36:20:PM
+Skill6 not scrapped in page 683: jobcard 9 | 26:04:2023 - 03:36:25:PM
+Skill6 not scrapped in page 684: jobcard 9 | 26:04:2023 - 03:36:30:PM
+Skill6 not scrapped in page 685: jobcard 9 | 26:04:2023 - 03:36:35:PM
+Skill6 not scrapped in page 686: jobcard 9 | 26:04:2023 - 03:36:40:PM
+Skill6 not scrapped in page 687: jobcard 9 | 26:04:2023 - 03:36:45:PM
+Skill6 not scrapped in page 688: jobcard 9 | 26:04:2023 - 03:36:50:PM
+Skill6 not scrapped in page 689: jobcard 9 | 26:04:2023 - 03:36:55:PM
+Skill6 not scrapped in page 690: jobcard 9 | 26:04:2023 - 03:37:00:PM
+Skill6 not scrapped in page 691: jobcard 9 | 26:04:2023 - 03:37:05:PM
+Skill6 not scrapped in page 692: jobcard 9 | 26:04:2023 - 03:37:10:PM
+Skill6 not scrapped in page 693: jobcard 9 | 26:04:2023 - 03:37:16:PM
+Skill6 not scrapped in page 694: jobcard 9 | 26:04:2023 - 03:37:21:PM
+Skill6 not scrapped in page 695: jobcard 9 | 26:04:2023 - 03:37:25:PM
+Skill6 not scrapped in page 696: jobcard 9 | 26:04:2023 - 03:37:30:PM
+Skill6 not scrapped in page 697: jobcard 9 | 26:04:2023 - 03:37:35:PM
+Skill6 not scrapped in page 698: jobcard 9 | 26:04:2023 - 03:37:41:PM
+Skill6 not scrapped in page 699: jobcard 9 | 26:04:2023 - 03:37:47:PM
+Skill6 not scrapped in page 700: jobcard 9 | 26:04:2023 - 03:37:53:PM
+Skill6 not scrapped in page 701: jobcard 9 | 26:04:2023 - 03:37:59:PM
+Skill6 not scrapped in page 702: jobcard 9 | 26:04:2023 - 03:38:03:PM
+Skill6 not scrapped in page 703: jobcard 9 | 26:04:2023 - 03:38:08:PM
+Skill6 not scrapped in page 704: jobcard 9 | 26:04:2023 - 03:38:13:PM
+Skill6 not scrapped in page 705: jobcard 9 | 26:04:2023 - 03:38:18:PM
+Skill6 not scrapped in page 706: jobcard 9 | 26:04:2023 - 03:38:22:PM
+Skill6 not scrapped in page 707: jobcard 9 | 26:04:2023 - 03:38:27:PM
+Skill6 not scrapped in page 708: jobcard 9 | 26:04:2023 - 03:38:32:PM
+Skill6 not scrapped in page 709: jobcard 9 | 26:04:2023 - 03:38:37:PM
+Skill6 not scrapped in page 710: jobcard 9 | 26:04:2023 - 03:38:41:PM
+Skill6 not scrapped in page 711: jobcard 9 | 26:04:2023 - 03:38:46:PM
+Skill6 not scrapped in page 712: jobcard 9 | 26:04:2023 - 03:38:51:PM
+Skill6 not scrapped in page 713: jobcard 9 | 26:04:2023 - 03:38:55:PM
+Skill6 not scrapped in page 714: jobcard 9 | 26:04:2023 - 03:39:00:PM
+Skill6 not scrapped in page 715: jobcard 9 | 26:04:2023 - 03:39:05:PM
+Skill6 not scrapped in page 716: jobcard 9 | 26:04:2023 - 03:39:10:PM
+Skill6 not scrapped in page 717: jobcard 9 | 26:04:2023 - 03:39:14:PM
+Skill6 not scrapped in page 718: jobcard 9 | 26:04:2023 - 03:39:19:PM
+Skill6 not scrapped in page 719: jobcard 9 | 26:04:2023 - 03:39:24:PM
+Skill6 not scrapped in page 720: jobcard 9 | 26:04:2023 - 03:39:29:PM
+Skill6 not scrapped in page 721: jobcard 9 | 26:04:2023 - 03:39:33:PM
+Skill6 not scrapped in page 722: jobcard 9 | 26:04:2023 - 03:39:38:PM
+Skill6 not scrapped in page 723: jobcard 9 | 26:04:2023 - 03:39:43:PM
+Skill6 not scrapped in page 724: jobcard 9 | 26:04:2023 - 03:39:47:PM
+Skill6 not scrapped in page 725: jobcard 9 | 26:04:2023 - 03:39:52:PM
+Skill6 not scrapped in page 726: jobcard 9 | 26:04:2023 - 03:39:57:PM
+Skill6 not scrapped in page 727: jobcard 9 | 26:04:2023 - 03:40:02:PM
+Skill6 not scrapped in page 728: jobcard 9 | 26:04:2023 - 03:40:06:PM
+Skill6 not scrapped in page 729: jobcard 9 | 26:04:2023 - 03:40:11:PM
+Skill6 not scrapped in page 730: jobcard 9 | 26:04:2023 - 03:40:16:PM
+Skill6 not scrapped in page 731: jobcard 9 | 26:04:2023 - 03:40:20:PM
+Skill6 not scrapped in page 732: jobcard 9 | 26:04:2023 - 03:40:25:PM
+Skill6 not scrapped in page 733: jobcard 9 | 26:04:2023 - 03:40:30:PM
+Skill6 not scrapped in page 734: jobcard 9 | 26:04:2023 - 03:40:35:PM
+Skill6 not scrapped in page 735: jobcard 9 | 26:04:2023 - 03:40:39:PM
+Skill6 not scrapped in page 736: jobcard 9 | 26:04:2023 - 03:40:44:PM
+Skill6 not scrapped in page 737: jobcard 9 | 26:04:2023 - 03:40:49:PM
+Skill6 not scrapped in page 738: jobcard 9 | 26:04:2023 - 03:40:53:PM
+Skill6 not scrapped in page 739: jobcard 9 | 26:04:2023 - 03:40:58:PM
+Skill6 not scrapped in page 740: jobcard 9 | 26:04:2023 - 03:41:03:PM
+Skill6 not scrapped in page 741: jobcard 9 | 26:04:2023 - 03:41:07:PM
+Skill6 not scrapped in page 742: jobcard 9 | 26:04:2023 - 03:41:12:PM
+Skill6 not scrapped in page 743: jobcard 9 | 26:04:2023 - 03:41:17:PM
+Skill6 not scrapped in page 744: jobcard 9 | 26:04:2023 - 03:41:21:PM
+Skill6 not scrapped in page 745: jobcard 9 | 26:04:2023 - 03:41:26:PM
+Skill6 not scrapped in page 746: jobcard 9 | 26:04:2023 - 03:41:31:PM
+Skill6 not scrapped in page 747: jobcard 9 | 26:04:2023 - 03:41:36:PM
+Skill6 not scrapped in page 748: jobcard 9 | 26:04:2023 - 03:41:40:PM
+Skill6 not scrapped in page 749: jobcard 9 | 26:04:2023 - 03:41:45:PM
+Skill6 not scrapped in page 750: jobcard 9 | 26:04:2023 - 03:41:50:PM
+Skill6 not scrapped in page 751: jobcard 9 | 26:04:2023 - 03:41:54:PM
+Skill6 not scrapped in page 752: jobcard 9 | 26:04:2023 - 03:41:59:PM
+Skill6 not scrapped in page 753: jobcard 9 | 26:04:2023 - 03:42:04:PM
+Skill6 not scrapped in page 754: jobcard 9 | 26:04:2023 - 03:42:09:PM
+Skill6 not scrapped in page 755: jobcard 9 | 26:04:2023 - 03:42:13:PM
+Skill6 not scrapped in page 756: jobcard 9 | 26:04:2023 - 03:42:18:PM
+Skill6 not scrapped in page 757: jobcard 9 | 26:04:2023 - 03:42:23:PM
+Skill6 not scrapped in page 758: jobcard 9 | 26:04:2023 - 03:42:27:PM
+Skill6 not scrapped in page 759: jobcard 9 | 26:04:2023 - 03:42:32:PM
+Skill6 not scrapped in page 760: jobcard 9 | 26:04:2023 - 03:42:37:PM
+Skill6 not scrapped in page 761: jobcard 9 | 26:04:2023 - 03:42:41:PM
+Skill6 not scrapped in page 762: jobcard 9 | 26:04:2023 - 03:42:46:PM
+Skill6 not scrapped in page 763: jobcard 9 | 26:04:2023 - 03:42:51:PM
+Skill6 not scrapped in page 764: jobcard 9 | 26:04:2023 - 03:42:55:PM
+Skill6 not scrapped in page 765: jobcard 9 | 26:04:2023 - 03:43:00:PM
+Skill6 not scrapped in page 766: jobcard 9 | 26:04:2023 - 03:43:05:PM
+Skill6 not scrapped in page 767: jobcard 9 | 26:04:2023 - 03:43:09:PM
+Skill6 not scrapped in page 768: jobcard 9 | 26:04:2023 - 03:43:14:PM
+Skill6 not scrapped in page 769: jobcard 9 | 26:04:2023 - 03:43:19:PM
+Skill6 not scrapped in page 770: jobcard 9 | 26:04:2023 - 03:43:23:PM
+Skill6 not scrapped in page 771: jobcard 9 | 26:04:2023 - 03:43:28:PM
+Skill6 not scrapped in page 772: jobcard 9 | 26:04:2023 - 03:43:33:PM
+Skill6 not scrapped in page 773: jobcard 9 | 26:04:2023 - 03:43:38:PM
+Skill6 not scrapped in page 774: jobcard 9 | 26:04:2023 - 03:43:43:PM
+Skill6 not scrapped in page 775: jobcard 9 | 26:04:2023 - 03:43:48:PM
+Skill6 not scrapped in page 776: jobcard 9 | 26:04:2023 - 03:43:53:PM
+Skill6 not scrapped in page 777: jobcard 9 | 26:04:2023 - 03:43:57:PM
+Skill6 not scrapped in page 778: jobcard 9 | 26:04:2023 - 03:44:02:PM
+Skill6 not scrapped in page 779: jobcard 9 | 26:04:2023 - 03:44:07:PM
+Skill6 not scrapped in page 780: jobcard 9 | 26:04:2023 - 03:44:11:PM
+Skill6 not scrapped in page 781: jobcard 9 | 26:04:2023 - 03:44:16:PM
+Skill6 not scrapped in page 782: jobcard 9 | 26:04:2023 - 03:44:21:PM
+Skill6 not scrapped in page 783: jobcard 9 | 26:04:2023 - 03:44:25:PM
+Skill6 not scrapped in page 784: jobcard 9 | 26:04:2023 - 03:44:30:PM
+Skill6 not scrapped in page 785: jobcard 9 | 26:04:2023 - 03:44:35:PM
+Skill6 not scrapped in page 786: jobcard 9 | 26:04:2023 - 03:44:39:PM
+Skill6 not scrapped in page 787: jobcard 9 | 26:04:2023 - 03:44:44:PM
+Skill6 not scrapped in page 788: jobcard 9 | 26:04:2023 - 03:44:49:PM
+Skill6 not scrapped in page 789: jobcard 9 | 26:04:2023 - 03:44:54:PM
+Skill6 not scrapped in page 790: jobcard 9 | 26:04:2023 - 03:44:58:PM
+Skill6 not scrapped in page 791: jobcard 9 | 26:04:2023 - 03:45:03:PM
+Skill6 not scrapped in page 792: jobcard 9 | 26:04:2023 - 03:45:08:PM
+Skill6 not scrapped in page 793: jobcard 9 | 26:04:2023 - 03:45:13:PM
+Skill6 not scrapped in page 794: jobcard 9 | 26:04:2023 - 03:45:17:PM
+Skill6 not scrapped in page 795: jobcard 9 | 26:04:2023 - 03:45:22:PM
+Skill6 not scrapped in page 796: jobcard 9 | 26:04:2023 - 03:45:27:PM
+Skill6 not scrapped in page 797: jobcard 9 | 26:04:2023 - 03:45:32:PM
+Skill6 not scrapped in page 798: jobcard 9 | 26:04:2023 - 03:45:38:PM
+Skill6 not scrapped in page 799: jobcard 9 | 26:04:2023 - 03:45:43:PM
+Skill6 not scrapped in page 800: jobcard 9 | 26:04:2023 - 03:45:48:PM
+Skill6 not scrapped in page 801: jobcard 9 | 26:04:2023 - 03:45:53:PM
+Skill6 not scrapped in page 802: jobcard 9 | 26:04:2023 - 03:45:57:PM
+Skill6 not scrapped in page 803: jobcard 9 | 26:04:2023 - 03:46:02:PM
+Skill6 not scrapped in page 804: jobcard 9 | 26:04:2023 - 03:46:07:PM
+Skill6 not scrapped in page 805: jobcard 9 | 26:04:2023 - 03:46:12:PM
+Skill6 not scrapped in page 806: jobcard 9 | 26:04:2023 - 03:46:16:PM
+Skill6 not scrapped in page 807: jobcard 9 | 26:04:2023 - 03:46:21:PM
+Skill6 not scrapped in page 808: jobcard 9 | 26:04:2023 - 03:46:26:PM
+Skill6 not scrapped in page 809: jobcard 9 | 26:04:2023 - 03:46:31:PM
+Skill6 not scrapped in page 810: jobcard 9 | 26:04:2023 - 03:46:35:PM
+Skill6 not scrapped in page 811: jobcard 9 | 26:04:2023 - 03:46:40:PM
+Skill6 not scrapped in page 812: jobcard 9 | 26:04:2023 - 03:46:45:PM
+Skill6 not scrapped in page 813: jobcard 9 | 26:04:2023 - 03:46:50:PM
+Skill6 not scrapped in page 814: jobcard 9 | 26:04:2023 - 03:46:54:PM
+Skill6 not scrapped in page 815: jobcard 9 | 26:04:2023 - 03:46:59:PM
+Skill6 not scrapped in page 816: jobcard 9 | 26:04:2023 - 03:47:04:PM
+Skill6 not scrapped in page 817: jobcard 9 | 26:04:2023 - 03:47:09:PM
+Skill6 not scrapped in page 818: jobcard 9 | 26:04:2023 - 03:47:13:PM
+Skill6 not scrapped in page 819: jobcard 9 | 26:04:2023 - 03:47:18:PM
+Skill6 not scrapped in page 820: jobcard 9 | 26:04:2023 - 03:47:23:PM
+Skill6 not scrapped in page 821: jobcard 9 | 26:04:2023 - 03:47:27:PM
+Skill6 not scrapped in page 822: jobcard 9 | 26:04:2023 - 03:47:32:PM
+Skill6 not scrapped in page 823: jobcard 9 | 26:04:2023 - 03:47:37:PM
+Skill6 not scrapped in page 824: jobcard 9 | 26:04:2023 - 03:47:42:PM
+Skill6 not scrapped in page 825: jobcard 9 | 26:04:2023 - 03:47:46:PM
+Skill6 not scrapped in page 826: jobcard 9 | 26:04:2023 - 03:47:51:PM
+Skill6 not scrapped in page 827: jobcard 9 | 26:04:2023 - 03:47:56:PM
+Skill6 not scrapped in page 828: jobcard 9 | 26:04:2023 - 03:48:01:PM
+Skill6 not scrapped in page 829: jobcard 9 | 26:04:2023 - 03:48:05:PM
+Skill6 not scrapped in page 830: jobcard 9 | 26:04:2023 - 03:48:10:PM
+Skill6 not scrapped in page 831: jobcard 9 | 26:04:2023 - 03:48:15:PM
+Skill6 not scrapped in page 832: jobcard 9 | 26:04:2023 - 03:48:20:PM
+Skill6 not scrapped in page 833: jobcard 9 | 26:04:2023 - 03:48:24:PM
+Skill6 not scrapped in page 834: jobcard 9 | 26:04:2023 - 03:48:29:PM
+Skill6 not scrapped in page 835: jobcard 9 | 26:04:2023 - 03:48:34:PM
+Skill6 not scrapped in page 836: jobcard 9 | 26:04:2023 - 03:48:38:PM
+Skill6 not scrapped in page 837: jobcard 9 | 26:04:2023 - 03:48:43:PM
+Skill6 not scrapped in page 838: jobcard 9 | 26:04:2023 - 03:48:48:PM
+Skill6 not scrapped in page 839: jobcard 9 | 26:04:2023 - 03:48:53:PM
+Skill6 not scrapped in page 840: jobcard 9 | 26:04:2023 - 03:48:57:PM
+Skill6 not scrapped in page 841: jobcard 9 | 26:04:2023 - 03:49:02:PM
+Skill6 not scrapped in page 842: jobcard 9 | 26:04:2023 - 03:49:07:PM
+Skill6 not scrapped in page 843: jobcard 9 | 26:04:2023 - 03:49:12:PM
+Skill6 not scrapped in page 844: jobcard 9 | 26:04:2023 - 03:49:17:PM
+Skill6 not scrapped in page 845: jobcard 9 | 26:04:2023 - 03:49:21:PM
+Skill6 not scrapped in page 846: jobcard 9 | 26:04:2023 - 03:49:26:PM
+Skill6 not scrapped in page 847: jobcard 9 | 26:04:2023 - 03:49:31:PM
+Skill6 not scrapped in page 848: jobcard 9 | 26:04:2023 - 03:49:35:PM
+Skill6 not scrapped in page 849: jobcard 9 | 26:04:2023 - 03:49:40:PM
+Skill6 not scrapped in page 850: jobcard 9 | 26:04:2023 - 03:49:45:PM
+Skill6 not scrapped in page 851: jobcard 9 | 26:04:2023 - 03:49:50:PM
+Skill6 not scrapped in page 852: jobcard 9 | 26:04:2023 - 03:49:54:PM
+Skill6 not scrapped in page 853: jobcard 9 | 26:04:2023 - 03:49:59:PM
+Skill6 not scrapped in page 854: jobcard 9 | 26:04:2023 - 03:50:04:PM
+Skill6 not scrapped in page 855: jobcard 9 | 26:04:2023 - 03:50:09:PM
+Skill6 not scrapped in page 856: jobcard 9 | 26:04:2023 - 03:50:13:PM
+Skill6 not scrapped in page 857: jobcard 9 | 26:04:2023 - 03:50:18:PM
+Skill6 not scrapped in page 858: jobcard 9 | 26:04:2023 - 03:50:23:PM
+Skill6 not scrapped in page 859: jobcard 9 | 26:04:2023 - 03:50:28:PM
+Skill6 not scrapped in page 860: jobcard 9 | 26:04:2023 - 03:50:33:PM
+Skill6 not scrapped in page 861: jobcard 9 | 26:04:2023 - 03:50:37:PM
+Skill6 not scrapped in page 862: jobcard 9 | 26:04:2023 - 03:50:42:PM
+Skill6 not scrapped in page 863: jobcard 9 | 26:04:2023 - 03:50:47:PM
+Skill6 not scrapped in page 864: jobcard 9 | 26:04:2023 - 03:50:52:PM
+Skill6 not scrapped in page 865: jobcard 9 | 26:04:2023 - 03:50:57:PM
+Skill6 not scrapped in page 866: jobcard 9 | 26:04:2023 - 03:51:03:PM
+Skill6 not scrapped in page 867: jobcard 9 | 26:04:2023 - 03:51:08:PM
+Skill6 not scrapped in page 868: jobcard 9 | 26:04:2023 - 03:51:13:PM
+Skill6 not scrapped in page 869: jobcard 9 | 26:04:2023 - 03:51:18:PM
+Skill6 not scrapped in page 870: jobcard 9 | 26:04:2023 - 03:51:22:PM
+Skill6 not scrapped in page 871: jobcard 9 | 26:04:2023 - 03:51:27:PM
+Skill6 not scrapped in page 872: jobcard 9 | 26:04:2023 - 03:51:33:PM
+Skill6 not scrapped in page 873: jobcard 9 | 26:04:2023 - 03:51:38:PM
+Skill6 not scrapped in page 874: jobcard 9 | 26:04:2023 - 03:51:43:PM
+Skill6 not scrapped in page 875: jobcard 9 | 26:04:2023 - 03:51:48:PM
+Skill6 not scrapped in page 876: jobcard 9 | 26:04:2023 - 03:51:55:PM
+Skill6 not scrapped in page 877: jobcard 9 | 26:04:2023 - 03:52:10:PM
+Skill6 not scrapped in page 878: jobcard 9 | 26:04:2023 - 03:52:15:PM
+Skill6 not scrapped in page 879: jobcard 9 | 26:04:2023 - 03:52:21:PM
+Skill6 not scrapped in page 880: jobcard 9 | 26:04:2023 - 03:52:26:PM
+Skill6 not scrapped in page 881: jobcard 9 | 26:04:2023 - 03:52:32:PM
+Skill6 not scrapped in page 882: jobcard 9 | 26:04:2023 - 03:52:37:PM
+Skill6 not scrapped in page 883: jobcard 9 | 26:04:2023 - 03:52:43:PM
+Skill6 not scrapped in page 884: jobcard 9 | 26:04:2023 - 03:52:50:PM
+Skill6 not scrapped in page 885: jobcard 9 | 26:04:2023 - 03:52:56:PM
+Skill6 not scrapped in page 886: jobcard 9 | 26:04:2023 - 03:53:01:PM
+Skill6 not scrapped in page 887: jobcard 9 | 26:04:2023 - 03:53:06:PM
+Skill6 not scrapped in page 888: jobcard 9 | 26:04:2023 - 03:53:12:PM
+Skill6 not scrapped in page 889: jobcard 9 | 26:04:2023 - 03:53:17:PM
+Skill6 not scrapped in page 890: jobcard 9 | 26:04:2023 - 03:53:23:PM
+Skill6 not scrapped in page 891: jobcard 9 | 26:04:2023 - 03:53:28:PM
+Skill6 not scrapped in page 892: jobcard 9 | 26:04:2023 - 03:53:33:PM
+Skill6 not scrapped in page 893: jobcard 9 | 26:04:2023 - 03:53:39:PM
+Skill6 not scrapped in page 894: jobcard 9 | 26:04:2023 - 03:53:44:PM
+Skill6 not scrapped in page 895: jobcard 9 | 26:04:2023 - 03:53:49:PM
+Skill6 not scrapped in page 896: jobcard 9 | 26:04:2023 - 03:53:55:PM
+Skill6 not scrapped in page 897: jobcard 9 | 26:04:2023 - 03:54:00:PM
+Skill6 not scrapped in page 898: jobcard 9 | 26:04:2023 - 03:54:05:PM
+Skill6 not scrapped in page 899: jobcard 9 | 26:04:2023 - 03:54:11:PM
+Skill6 not scrapped in page 900: jobcard 9 | 26:04:2023 - 03:54:16:PM
+Skill6 not scrapped in page 901: jobcard 9 | 26:04:2023 - 03:54:21:PM
+Skill6 not scrapped in page 902: jobcard 9 | 26:04:2023 - 03:54:27:PM
+Skill6 not scrapped in page 903: jobcard 9 | 26:04:2023 - 03:54:32:PM
+Skill6 not scrapped in page 904: jobcard 9 | 26:04:2023 - 03:54:37:PM
+Skill6 not scrapped in page 905: jobcard 9 | 26:04:2023 - 03:54:42:PM
+Skill6 not scrapped in page 906: jobcard 9 | 26:04:2023 - 03:54:47:PM
+Skill6 not scrapped in page 907: jobcard 9 | 26:04:2023 - 03:54:52:PM
+Skill6 not scrapped in page 908: jobcard 9 | 26:04:2023 - 03:54:58:PM
+Skill6 not scrapped in page 909: jobcard 9 | 26:04:2023 - 03:55:03:PM
+Skill6 not scrapped in page 910: jobcard 9 | 26:04:2023 - 03:55:08:PM
+Skill6 not scrapped in page 911: jobcard 9 | 26:04:2023 - 03:55:14:PM
+Skill6 not scrapped in page 912: jobcard 9 | 26:04:2023 - 03:55:19:PM
+Skill6 not scrapped in page 913: jobcard 9 | 26:04:2023 - 03:55:24:PM
+Skill6 not scrapped in page 914: jobcard 9 | 26:04:2023 - 03:55:29:PM
+Skill6 not scrapped in page 915: jobcard 9 | 26:04:2023 - 03:55:35:PM
+Skill6 not scrapped in page 916: jobcard 9 | 26:04:2023 - 03:55:40:PM
+Skill6 not scrapped in page 917: jobcard 9 | 26:04:2023 - 03:55:45:PM
+Skill6 not scrapped in page 918: jobcard 9 | 26:04:2023 - 03:55:51:PM
+Skill6 not scrapped in page 919: jobcard 9 | 26:04:2023 - 03:55:56:PM
+Skill6 not scrapped in page 920: jobcard 9 | 26:04:2023 - 03:56:01:PM
+Skill6 not scrapped in page 921: jobcard 9 | 26:04:2023 - 03:56:07:PM
+Skill6 not scrapped in page 922: jobcard 9 | 26:04:2023 - 03:56:12:PM
+Skill6 not scrapped in page 923: jobcard 9 | 26:04:2023 - 03:56:17:PM
+Skill6 not scrapped in page 924: jobcard 9 | 26:04:2023 - 03:56:22:PM
+Skill6 not scrapped in page 925: jobcard 9 | 26:04:2023 - 03:56:27:PM
+Skill6 not scrapped in page 926: jobcard 9 | 26:04:2023 - 03:56:33:PM
+Skill6 not scrapped in page 927: jobcard 9 | 26:04:2023 - 03:56:38:PM
+Skill6 not scrapped in page 928: jobcard 9 | 26:04:2023 - 03:56:43:PM
+Skill6 not scrapped in page 929: jobcard 9 | 26:04:2023 - 03:56:49:PM
+Skill6 not scrapped in page 930: jobcard 9 | 26:04:2023 - 03:56:54:PM
+Skill6 not scrapped in page 931: jobcard 9 | 26:04:2023 - 03:57:00:PM
+Skill6 not scrapped in page 932: jobcard 9 | 26:04:2023 - 03:57:05:PM
+Skill6 not scrapped in page 933: jobcard 9 | 26:04:2023 - 03:57:10:PM
+Skill6 not scrapped in page 934: jobcard 9 | 26:04:2023 - 03:57:15:PM
+Skill6 not scrapped in page 935: jobcard 9 | 26:04:2023 - 03:57:20:PM
+Skill6 not scrapped in page 936: jobcard 9 | 26:04:2023 - 03:57:26:PM
+Skill6 not scrapped in page 937: jobcard 9 | 26:04:2023 - 03:57:32:PM
+Skill6 not scrapped in page 938: jobcard 9 | 26:04:2023 - 03:57:37:PM
+Skill6 not scrapped in page 939: jobcard 9 | 26:04:2023 - 03:57:42:PM
+Skill6 not scrapped in page 940: jobcard 9 | 26:04:2023 - 03:57:47:PM
+Skill6 not scrapped in page 941: jobcard 9 | 26:04:2023 - 03:57:52:PM
+Skill6 not scrapped in page 942: jobcard 9 | 26:04:2023 - 03:57:58:PM
+Skill6 not scrapped in page 943: jobcard 9 | 26:04:2023 - 03:58:04:PM
+Skill6 not scrapped in page 944: jobcard 9 | 26:04:2023 - 03:58:09:PM
+Skill6 not scrapped in page 945: jobcard 9 | 26:04:2023 - 03:58:14:PM
+Skill6 not scrapped in page 946: jobcard 9 | 26:04:2023 - 03:58:19:PM
+Skill6 not scrapped in page 947: jobcard 9 | 26:04:2023 - 03:58:25:PM
+18910 jobs are scraped | 26:04:2023 - 03:58:25:PM
+Total rows in DF : 18910 | 26:04:2023 - 03:58:27:PM
+After removing na's : 20 | 26:04:2023 - 03:58:27:PM
+Starting to insert rows into DB | 26:04:2023 - 03:58:28:PM
+Overall jobs count: 19692 | 26:04:2023 - 07:19:33:PM
+Skill6 not scrapped in page 2: jobcard 11 | 26:04:2023 - 07:19:36:PM
+Skill6 not scrapped in page 3: jobcard 11 | 26:04:2023 - 07:19:41:PM
+Skill6 not scrapped in page 4: jobcard 11 | 26:04:2023 - 07:19:46:PM
+Skill6 not scrapped in page 5: jobcard 11 | 26:04:2023 - 07:19:51:PM
+Skill6 not scrapped in page 6: jobcard 11 | 26:04:2023 - 07:19:55:PM
+Skill6 not scrapped in page 7: jobcard 11 | 26:04:2023 - 07:20:00:PM
+Skill6 not scrapped in page 8: jobcard 11 | 26:04:2023 - 07:20:05:PM
+Skill6 not scrapped in page 9: jobcard 11 | 26:04:2023 - 07:20:10:PM
+Skill6 not scrapped in page 10: jobcard 11 | 26:04:2023 - 07:20:14:PM
+Skill6 not scrapped in page 11: jobcard 11 | 26:04:2023 - 07:20:19:PM
+Skill6 not scrapped in page 12: jobcard 11 | 26:04:2023 - 07:20:24:PM
+Skill6 not scrapped in page 13: jobcard 11 | 26:04:2023 - 07:20:29:PM
+Skill6 not scrapped in page 14: jobcard 11 | 26:04:2023 - 07:20:33:PM
+Skill6 not scrapped in page 15: jobcard 11 | 26:04:2023 - 07:20:38:PM
+Skill6 not scrapped in page 16: jobcard 11 | 26:04:2023 - 07:20:43:PM
+Skill6 not scrapped in page 17: jobcard 11 | 26:04:2023 - 07:20:47:PM
+Skill6 not scrapped in page 18: jobcard 11 | 26:04:2023 - 07:20:52:PM
+Skill6 not scrapped in page 19: jobcard 11 | 26:04:2023 - 07:20:56:PM
+Skill6 not scrapped in page 20: jobcard 11 | 26:04:2023 - 07:21:01:PM
+Skill6 not scrapped in page 21: jobcard 11 | 26:04:2023 - 07:21:06:PM
+Skill6 not scrapped in page 22: jobcard 11 | 26:04:2023 - 07:21:10:PM
+Skill6 not scrapped in page 23: jobcard 11 | 26:04:2023 - 07:21:15:PM
+Skill6 not scrapped in page 24: jobcard 11 | 26:04:2023 - 07:21:20:PM
+Skill6 not scrapped in page 25: jobcard 11 | 26:04:2023 - 07:21:24:PM
+Skill6 not scrapped in page 26: jobcard 11 | 26:04:2023 - 07:21:29:PM
+Skill6 not scrapped in page 27: jobcard 11 | 26:04:2023 - 07:21:34:PM
+Skill6 not scrapped in page 28: jobcard 11 | 26:04:2023 - 07:21:39:PM
+Skill6 not scrapped in page 29: jobcard 11 | 26:04:2023 - 07:21:43:PM
+Skill6 not scrapped in page 30: jobcard 11 | 26:04:2023 - 07:21:48:PM
+Skill6 not scrapped in page 31: jobcard 11 | 26:04:2023 - 07:21:52:PM
+Skill6 not scrapped in page 32: jobcard 11 | 26:04:2023 - 07:21:57:PM
+Skill6 not scrapped in page 33: jobcard 11 | 26:04:2023 - 07:22:02:PM
+Skill6 not scrapped in page 34: jobcard 11 | 26:04:2023 - 07:22:06:PM
+Skill6 not scrapped in page 35: jobcard 11 | 26:04:2023 - 07:22:11:PM
+Skill6 not scrapped in page 36: jobcard 11 | 26:04:2023 - 07:22:16:PM
+Skill6 not scrapped in page 37: jobcard 11 | 26:04:2023 - 07:22:21:PM
+Skill6 not scrapped in page 38: jobcard 11 | 26:04:2023 - 07:22:25:PM
+Skill6 not scrapped in page 39: jobcard 11 | 26:04:2023 - 07:22:30:PM
+Skill6 not scrapped in page 40: jobcard 11 | 26:04:2023 - 07:22:35:PM
+Skill6 not scrapped in page 41: jobcard 11 | 26:04:2023 - 07:22:40:PM
+Skill6 not scrapped in page 42: jobcard 11 | 26:04:2023 - 07:22:45:PM
+Skill6 not scrapped in page 43: jobcard 11 | 26:04:2023 - 07:22:49:PM
+Skill6 not scrapped in page 44: jobcard 11 | 26:04:2023 - 07:22:54:PM
+Skill6 not scrapped in page 45: jobcard 11 | 26:04:2023 - 07:22:58:PM
+Skill6 not scrapped in page 46: jobcard 11 | 26:04:2023 - 07:23:03:PM
+Skill6 not scrapped in page 47: jobcard 11 | 26:04:2023 - 07:23:08:PM
+Skill6 not scrapped in page 48: jobcard 11 | 26:04:2023 - 07:23:13:PM
+Skill6 not scrapped in page 49: jobcard 11 | 26:04:2023 - 07:23:18:PM
+Skill6 not scrapped in page 50: jobcard 11 | 26:04:2023 - 07:23:23:PM
+Skill6 not scrapped in page 51: jobcard 11 | 26:04:2023 - 07:23:28:PM
+Skill6 not scrapped in page 52: jobcard 11 | 26:04:2023 - 07:23:33:PM
+Skill6 not scrapped in page 53: jobcard 11 | 26:04:2023 - 07:23:38:PM
+Skill6 not scrapped in page 54: jobcard 11 | 26:04:2023 - 07:23:44:PM
+Skill6 not scrapped in page 55: jobcard 11 | 26:04:2023 - 07:23:49:PM
+Skill6 not scrapped in page 56: jobcard 11 | 26:04:2023 - 07:23:54:PM
+Skill6 not scrapped in page 57: jobcard 11 | 26:04:2023 - 07:23:59:PM
+Skill6 not scrapped in page 58: jobcard 11 | 26:04:2023 - 07:24:04:PM
+Skill6 not scrapped in page 59: jobcard 11 | 26:04:2023 - 07:24:09:PM
+Skill6 not scrapped in page 60: jobcard 11 | 26:04:2023 - 07:24:15:PM
+Skill6 not scrapped in page 61: jobcard 11 | 26:04:2023 - 07:24:20:PM
+Skill6 not scrapped in page 62: jobcard 11 | 26:04:2023 - 07:24:25:PM
+Skill6 not scrapped in page 63: jobcard 11 | 26:04:2023 - 07:24:30:PM
+Skill6 not scrapped in page 64: jobcard 11 | 26:04:2023 - 07:24:35:PM
+Skill6 not scrapped in page 65: jobcard 11 | 26:04:2023 - 07:24:40:PM
+Skill6 not scrapped in page 66: jobcard 11 | 26:04:2023 - 07:24:45:PM
+Skill6 not scrapped in page 67: jobcard 11 | 26:04:2023 - 07:24:50:PM
+Skill6 not scrapped in page 68: jobcard 11 | 26:04:2023 - 07:24:55:PM
+Skill6 not scrapped in page 69: jobcard 11 | 26:04:2023 - 07:25:00:PM
+Skill6 not scrapped in page 70: jobcard 11 | 26:04:2023 - 07:25:05:PM
+Skill6 not scrapped in page 71: jobcard 11 | 26:04:2023 - 07:25:09:PM
+Skill6 not scrapped in page 72: jobcard 11 | 26:04:2023 - 07:25:14:PM
+Skill6 not scrapped in page 73: jobcard 11 | 26:04:2023 - 07:25:19:PM
+Skill6 not scrapped in page 74: jobcard 11 | 26:04:2023 - 07:25:24:PM
+Skill6 not scrapped in page 75: jobcard 11 | 26:04:2023 - 07:25:29:PM
+Skill6 not scrapped in page 76: jobcard 11 | 26:04:2023 - 07:25:34:PM
+Skill6 not scrapped in page 77: jobcard 11 | 26:04:2023 - 07:25:39:PM
+Skill6 not scrapped in page 78: jobcard 11 | 26:04:2023 - 07:25:43:PM
+Skill6 not scrapped in page 79: jobcard 11 | 26:04:2023 - 07:25:48:PM
+Skill6 not scrapped in page 80: jobcard 11 | 26:04:2023 - 07:25:53:PM
+Skill6 not scrapped in page 81: jobcard 11 | 26:04:2023 - 07:25:58:PM
+Skill6 not scrapped in page 82: jobcard 11 | 26:04:2023 - 07:26:03:PM
+Skill6 not scrapped in page 83: jobcard 11 | 26:04:2023 - 07:26:08:PM
+Skill6 not scrapped in page 84: jobcard 11 | 26:04:2023 - 07:26:12:PM
+Skill6 not scrapped in page 85: jobcard 11 | 26:04:2023 - 07:26:17:PM
+Skill6 not scrapped in page 86: jobcard 11 | 26:04:2023 - 07:26:22:PM
+Skill6 not scrapped in page 87: jobcard 11 | 26:04:2023 - 07:26:26:PM
+Skill6 not scrapped in page 88: jobcard 11 | 26:04:2023 - 07:26:31:PM
+Skill6 not scrapped in page 89: jobcard 11 | 26:04:2023 - 07:26:36:PM
+Skill6 not scrapped in page 90: jobcard 11 | 26:04:2023 - 07:26:40:PM
+Skill6 not scrapped in page 91: jobcard 11 | 26:04:2023 - 07:26:45:PM
+Skill6 not scrapped in page 92: jobcard 11 | 26:04:2023 - 07:26:50:PM
+Skill6 not scrapped in page 93: jobcard 11 | 26:04:2023 - 07:26:55:PM
+Skill6 not scrapped in page 94: jobcard 11 | 26:04:2023 - 07:26:59:PM
+Skill6 not scrapped in page 95: jobcard 11 | 26:04:2023 - 07:27:04:PM
+Skill6 not scrapped in page 96: jobcard 11 | 26:04:2023 - 07:27:09:PM
+Skill6 not scrapped in page 97: jobcard 11 | 26:04:2023 - 07:27:13:PM
+Skill6 not scrapped in page 98: jobcard 11 | 26:04:2023 - 07:27:18:PM
+Skill6 not scrapped in page 99: jobcard 11 | 26:04:2023 - 07:27:23:PM
+Skill6 not scrapped in page 100: jobcard 11 | 26:04:2023 - 07:27:28:PM
+Skill6 not scrapped in page 101: jobcard 11 | 26:04:2023 - 07:27:32:PM
+Skill6 not scrapped in page 102: jobcard 11 | 26:04:2023 - 07:27:37:PM
+Skill6 not scrapped in page 103: jobcard 11 | 26:04:2023 - 07:27:42:PM
+Skill6 not scrapped in page 104: jobcard 11 | 26:04:2023 - 07:27:46:PM
+Skill6 not scrapped in page 105: jobcard 11 | 26:04:2023 - 07:27:51:PM
+Skill6 not scrapped in page 106: jobcard 11 | 26:04:2023 - 07:27:56:PM
+Skill6 not scrapped in page 107: jobcard 11 | 26:04:2023 - 07:28:01:PM
+Skill6 not scrapped in page 108: jobcard 11 | 26:04:2023 - 07:28:05:PM
+Skill6 not scrapped in page 109: jobcard 11 | 26:04:2023 - 07:28:10:PM
+Skill6 not scrapped in page 110: jobcard 11 | 26:04:2023 - 07:28:15:PM
+Skill6 not scrapped in page 111: jobcard 11 | 26:04:2023 - 07:28:20:PM
+Skill6 not scrapped in page 112: jobcard 11 | 26:04:2023 - 07:28:24:PM
+Skill6 not scrapped in page 113: jobcard 11 | 26:04:2023 - 07:28:29:PM
+Skill6 not scrapped in page 114: jobcard 11 | 26:04:2023 - 07:28:34:PM
+Skill6 not scrapped in page 115: jobcard 11 | 26:04:2023 - 07:28:38:PM
+Skill6 not scrapped in page 116: jobcard 11 | 26:04:2023 - 07:28:43:PM
+Skill6 not scrapped in page 117: jobcard 11 | 26:04:2023 - 07:28:48:PM
+Skill6 not scrapped in page 118: jobcard 11 | 26:04:2023 - 07:28:53:PM
+Skill6 not scrapped in page 119: jobcard 11 | 26:04:2023 - 07:28:57:PM
+Skill6 not scrapped in page 120: jobcard 11 | 26:04:2023 - 07:29:02:PM
+Skill6 not scrapped in page 121: jobcard 11 | 26:04:2023 - 07:29:07:PM
+Skill6 not scrapped in page 122: jobcard 11 | 26:04:2023 - 07:29:12:PM
+Skill6 not scrapped in page 123: jobcard 11 | 26:04:2023 - 07:29:16:PM
+Skill6 not scrapped in page 124: jobcard 11 | 26:04:2023 - 07:29:21:PM
+Skill6 not scrapped in page 125: jobcard 11 | 26:04:2023 - 07:29:26:PM
+Skill6 not scrapped in page 126: jobcard 11 | 26:04:2023 - 07:29:31:PM
+Skill6 not scrapped in page 127: jobcard 11 | 26:04:2023 - 07:29:35:PM
+Skill6 not scrapped in page 128: jobcard 11 | 26:04:2023 - 07:29:40:PM
+Skill6 not scrapped in page 129: jobcard 11 | 26:04:2023 - 07:29:45:PM
+Skill6 not scrapped in page 130: jobcard 11 | 26:04:2023 - 07:29:50:PM
+Skill6 not scrapped in page 131: jobcard 11 | 26:04:2023 - 07:29:54:PM
+Skill6 not scrapped in page 132: jobcard 11 | 26:04:2023 - 07:29:59:PM
+Skill6 not scrapped in page 133: jobcard 11 | 26:04:2023 - 07:30:04:PM
+Skill6 not scrapped in page 134: jobcard 11 | 26:04:2023 - 07:30:09:PM
+Skill6 not scrapped in page 135: jobcard 11 | 26:04:2023 - 07:30:13:PM
+Skill6 not scrapped in page 136: jobcard 11 | 26:04:2023 - 07:30:18:PM
+Skill6 not scrapped in page 137: jobcard 11 | 26:04:2023 - 07:30:23:PM
+Skill6 not scrapped in page 138: jobcard 11 | 26:04:2023 - 07:30:28:PM
+Skill6 not scrapped in page 139: jobcard 11 | 26:04:2023 - 07:30:32:PM
+Skill6 not scrapped in page 140: jobcard 11 | 26:04:2023 - 07:30:37:PM
+Skill6 not scrapped in page 141: jobcard 11 | 26:04:2023 - 07:30:42:PM
+Skill6 not scrapped in page 142: jobcard 11 | 26:04:2023 - 07:30:47:PM
+Skill6 not scrapped in page 143: jobcard 11 | 26:04:2023 - 07:30:51:PM
+Skill6 not scrapped in page 144: jobcard 11 | 26:04:2023 - 07:30:56:PM
+Skill6 not scrapped in page 145: jobcard 11 | 26:04:2023 - 07:31:01:PM
+Skill6 not scrapped in page 146: jobcard 11 | 26:04:2023 - 07:31:05:PM
+Skill6 not scrapped in page 147: jobcard 11 | 26:04:2023 - 07:31:10:PM
+Skill6 not scrapped in page 148: jobcard 11 | 26:04:2023 - 07:31:15:PM
+Skill6 not scrapped in page 149: jobcard 11 | 26:04:2023 - 07:31:20:PM
+Skill6 not scrapped in page 150: jobcard 11 | 26:04:2023 - 07:31:24:PM
+Skill6 not scrapped in page 151: jobcard 11 | 26:04:2023 - 07:31:29:PM
+Skill6 not scrapped in page 152: jobcard 11 | 26:04:2023 - 07:31:34:PM
+Skill6 not scrapped in page 153: jobcard 11 | 26:04:2023 - 07:31:39:PM
+Skill6 not scrapped in page 154: jobcard 11 | 26:04:2023 - 07:31:43:PM
+Skill6 not scrapped in page 155: jobcard 11 | 26:04:2023 - 07:31:48:PM
+Skill6 not scrapped in page 156: jobcard 11 | 26:04:2023 - 07:31:53:PM
+Skill6 not scrapped in page 157: jobcard 11 | 26:04:2023 - 07:31:58:PM
+Skill6 not scrapped in page 158: jobcard 11 | 26:04:2023 - 07:32:03:PM
+Skill6 not scrapped in page 159: jobcard 11 | 26:04:2023 - 07:32:07:PM
+Skill6 not scrapped in page 160: jobcard 11 | 26:04:2023 - 07:32:12:PM
+Skill6 not scrapped in page 161: jobcard 11 | 26:04:2023 - 07:32:17:PM
+Skill6 not scrapped in page 162: jobcard 11 | 26:04:2023 - 07:32:21:PM
+Skill6 not scrapped in page 163: jobcard 11 | 26:04:2023 - 07:32:26:PM
+Skill6 not scrapped in page 164: jobcard 11 | 26:04:2023 - 07:32:31:PM
+Skill6 not scrapped in page 165: jobcard 11 | 26:04:2023 - 07:32:36:PM
+Skill6 not scrapped in page 166: jobcard 11 | 26:04:2023 - 07:32:40:PM
+Skill6 not scrapped in page 167: jobcard 11 | 26:04:2023 - 07:32:45:PM
+Skill6 not scrapped in page 168: jobcard 11 | 26:04:2023 - 07:32:50:PM
+Skill6 not scrapped in page 169: jobcard 11 | 26:04:2023 - 07:32:55:PM
+Skill6 not scrapped in page 170: jobcard 11 | 26:04:2023 - 07:33:00:PM
+Skill6 not scrapped in page 171: jobcard 11 | 26:04:2023 - 07:33:04:PM
+Skill6 not scrapped in page 172: jobcard 11 | 26:04:2023 - 07:33:09:PM
+Skill6 not scrapped in page 173: jobcard 11 | 26:04:2023 - 07:33:14:PM
+Skill6 not scrapped in page 174: jobcard 11 | 26:04:2023 - 07:33:18:PM
+Skill6 not scrapped in page 175: jobcard 11 | 26:04:2023 - 07:33:23:PM
+Skill6 not scrapped in page 176: jobcard 11 | 26:04:2023 - 07:33:28:PM
+Skill6 not scrapped in page 177: jobcard 11 | 26:04:2023 - 07:33:33:PM
+Skill6 not scrapped in page 178: jobcard 11 | 26:04:2023 - 07:33:37:PM
+Skill6 not scrapped in page 179: jobcard 11 | 26:04:2023 - 07:33:42:PM
+Skill6 not scrapped in page 180: jobcard 11 | 26:04:2023 - 07:33:46:PM
+Skill6 not scrapped in page 181: jobcard 11 | 26:04:2023 - 07:33:51:PM
+Skill6 not scrapped in page 182: jobcard 11 | 26:04:2023 - 07:33:56:PM
+Skill6 not scrapped in page 183: jobcard 11 | 26:04:2023 - 07:34:01:PM
+Skill6 not scrapped in page 184: jobcard 11 | 26:04:2023 - 07:34:06:PM
+Skill6 not scrapped in page 185: jobcard 11 | 26:04:2023 - 07:34:10:PM
+Skill6 not scrapped in page 186: jobcard 11 | 26:04:2023 - 07:34:15:PM
+Skill6 not scrapped in page 187: jobcard 11 | 26:04:2023 - 07:34:20:PM
+Skill6 not scrapped in page 188: jobcard 11 | 26:04:2023 - 07:34:24:PM
+Skill6 not scrapped in page 189: jobcard 11 | 26:04:2023 - 07:34:29:PM
+Skill6 not scrapped in page 190: jobcard 11 | 26:04:2023 - 07:34:34:PM
+Skill6 not scrapped in page 191: jobcard 11 | 26:04:2023 - 07:34:39:PM
+Skill6 not scrapped in page 192: jobcard 11 | 26:04:2023 - 07:34:43:PM
+Skill6 not scrapped in page 193: jobcard 11 | 26:04:2023 - 07:34:48:PM
+Skill6 not scrapped in page 194: jobcard 11 | 26:04:2023 - 07:34:53:PM
+Skill6 not scrapped in page 195: jobcard 11 | 26:04:2023 - 07:34:58:PM
+Skill6 not scrapped in page 196: jobcard 11 | 26:04:2023 - 07:35:02:PM
+Skill6 not scrapped in page 197: jobcard 11 | 26:04:2023 - 07:35:07:PM
+Skill6 not scrapped in page 198: jobcard 11 | 26:04:2023 - 07:35:12:PM
+Skill6 not scrapped in page 199: jobcard 11 | 26:04:2023 - 07:35:16:PM
+Skill6 not scrapped in page 200: jobcard 11 | 26:04:2023 - 07:35:21:PM
+Skill6 not scrapped in page 201: jobcard 11 | 26:04:2023 - 07:35:26:PM
+Skill6 not scrapped in page 202: jobcard 11 | 26:04:2023 - 07:35:30:PM
+Skill6 not scrapped in page 203: jobcard 11 | 26:04:2023 - 07:35:35:PM
+Skill6 not scrapped in page 204: jobcard 11 | 26:04:2023 - 07:35:40:PM
+Skill6 not scrapped in page 205: jobcard 11 | 26:04:2023 - 07:35:44:PM
+Skill6 not scrapped in page 206: jobcard 11 | 26:04:2023 - 07:35:49:PM
+Skill6 not scrapped in page 207: jobcard 11 | 26:04:2023 - 07:35:54:PM
+Skill6 not scrapped in page 208: jobcard 11 | 26:04:2023 - 07:35:58:PM
+Skill6 not scrapped in page 209: jobcard 11 | 26:04:2023 - 07:36:03:PM
+Skill6 not scrapped in page 210: jobcard 11 | 26:04:2023 - 07:36:07:PM
+Skill6 not scrapped in page 211: jobcard 11 | 26:04:2023 - 07:36:12:PM
+Skill6 not scrapped in page 212: jobcard 11 | 26:04:2023 - 07:36:16:PM
+Skill6 not scrapped in page 213: jobcard 11 | 26:04:2023 - 07:36:21:PM
+Skill6 not scrapped in page 214: jobcard 11 | 26:04:2023 - 07:36:25:PM
+Skill6 not scrapped in page 215: jobcard 11 | 26:04:2023 - 07:36:30:PM
+Skill6 not scrapped in page 216: jobcard 11 | 26:04:2023 - 07:36:35:PM
+Skill6 not scrapped in page 217: jobcard 11 | 26:04:2023 - 07:36:39:PM
+Skill6 not scrapped in page 218: jobcard 11 | 26:04:2023 - 07:36:44:PM
+Skill6 not scrapped in page 219: jobcard 11 | 26:04:2023 - 07:36:48:PM
+Skill6 not scrapped in page 220: jobcard 11 | 26:04:2023 - 07:36:53:PM
+Skill6 not scrapped in page 221: jobcard 11 | 26:04:2023 - 07:36:57:PM
+Skill6 not scrapped in page 222: jobcard 11 | 26:04:2023 - 07:37:02:PM
+Skill6 not scrapped in page 223: jobcard 11 | 26:04:2023 - 07:37:07:PM
+Skill6 not scrapped in page 224: jobcard 11 | 26:04:2023 - 07:37:11:PM
+Skill6 not scrapped in page 225: jobcard 11 | 26:04:2023 - 07:37:16:PM
+Skill6 not scrapped in page 226: jobcard 11 | 26:04:2023 - 07:37:20:PM
+Skill6 not scrapped in page 227: jobcard 11 | 26:04:2023 - 07:37:25:PM
+Skill6 not scrapped in page 228: jobcard 11 | 26:04:2023 - 07:37:29:PM
+Skill6 not scrapped in page 229: jobcard 11 | 26:04:2023 - 07:37:34:PM
+Skill6 not scrapped in page 230: jobcard 11 | 26:04:2023 - 07:37:39:PM
+Skill6 not scrapped in page 231: jobcard 11 | 26:04:2023 - 07:37:43:PM
+Skill6 not scrapped in page 232: jobcard 11 | 26:04:2023 - 07:37:48:PM
+Skill6 not scrapped in page 233: jobcard 11 | 26:04:2023 - 07:37:52:PM
+Skill6 not scrapped in page 234: jobcard 11 | 26:04:2023 - 07:37:57:PM
+Skill6 not scrapped in page 235: jobcard 11 | 26:04:2023 - 07:38:01:PM
+Skill6 not scrapped in page 236: jobcard 11 | 26:04:2023 - 07:38:06:PM
+Skill6 not scrapped in page 237: jobcard 11 | 26:04:2023 - 07:38:11:PM
+Skill6 not scrapped in page 238: jobcard 11 | 26:04:2023 - 07:38:15:PM
+Skill6 not scrapped in page 239: jobcard 11 | 26:04:2023 - 07:38:20:PM
+Skill6 not scrapped in page 240: jobcard 11 | 26:04:2023 - 07:38:24:PM
+Skill6 not scrapped in page 241: jobcard 11 | 26:04:2023 - 07:38:29:PM
+Skill6 not scrapped in page 242: jobcard 11 | 26:04:2023 - 07:38:33:PM
+Skill6 not scrapped in page 243: jobcard 11 | 26:04:2023 - 07:38:38:PM
+Skill6 not scrapped in page 244: jobcard 11 | 26:04:2023 - 07:38:43:PM
+Skill6 not scrapped in page 245: jobcard 11 | 26:04:2023 - 07:38:47:PM
+Skill6 not scrapped in page 246: jobcard 11 | 26:04:2023 - 07:38:52:PM
+Skill6 not scrapped in page 247: jobcard 11 | 26:04:2023 - 07:38:56:PM
+Skill6 not scrapped in page 248: jobcard 11 | 26:04:2023 - 07:39:01:PM
+Skill6 not scrapped in page 249: jobcard 11 | 26:04:2023 - 07:39:05:PM
+Skill6 not scrapped in page 250: jobcard 11 | 26:04:2023 - 07:39:10:PM
+Skill6 not scrapped in page 251: jobcard 11 | 26:04:2023 - 07:39:14:PM
+Skill6 not scrapped in page 252: jobcard 11 | 26:04:2023 - 07:39:19:PM
+Skill6 not scrapped in page 253: jobcard 11 | 26:04:2023 - 07:39:24:PM
+Skill6 not scrapped in page 254: jobcard 11 | 26:04:2023 - 07:39:29:PM
+Skill6 not scrapped in page 255: jobcard 11 | 26:04:2023 - 07:39:34:PM
+Skill6 not scrapped in page 256: jobcard 11 | 26:04:2023 - 07:39:38:PM
+Skill6 not scrapped in page 257: jobcard 11 | 26:04:2023 - 07:39:44:PM
+Skill6 not scrapped in page 258: jobcard 11 | 26:04:2023 - 07:39:48:PM
+Skill6 not scrapped in page 259: jobcard 11 | 26:04:2023 - 07:39:53:PM
+Skill6 not scrapped in page 260: jobcard 11 | 26:04:2023 - 07:39:58:PM
+Skill6 not scrapped in page 261: jobcard 11 | 26:04:2023 - 07:40:03:PM
+Skill6 not scrapped in page 262: jobcard 11 | 26:04:2023 - 07:40:07:PM
+Skill6 not scrapped in page 263: jobcard 11 | 26:04:2023 - 07:40:12:PM
+Skill6 not scrapped in page 264: jobcard 11 | 26:04:2023 - 07:40:17:PM
+Skill6 not scrapped in page 265: jobcard 11 | 26:04:2023 - 07:40:22:PM
+Skill6 not scrapped in page 266: jobcard 11 | 26:04:2023 - 07:40:27:PM
+Skill6 not scrapped in page 267: jobcard 11 | 26:04:2023 - 07:40:31:PM
+Skill6 not scrapped in page 268: jobcard 11 | 26:04:2023 - 07:40:36:PM
+Skill6 not scrapped in page 269: jobcard 11 | 26:04:2023 - 07:40:41:PM
+Skill6 not scrapped in page 270: jobcard 11 | 26:04:2023 - 07:40:46:PM
+Skill6 not scrapped in page 271: jobcard 11 | 26:04:2023 - 07:40:50:PM
+Skill6 not scrapped in page 272: jobcard 11 | 26:04:2023 - 07:40:55:PM
+Skill6 not scrapped in page 273: jobcard 11 | 26:04:2023 - 07:41:00:PM
+Skill6 not scrapped in page 274: jobcard 11 | 26:04:2023 - 07:41:05:PM
+Skill6 not scrapped in page 275: jobcard 11 | 26:04:2023 - 07:41:09:PM
+Skill6 not scrapped in page 276: jobcard 11 | 26:04:2023 - 07:41:14:PM
+Skill6 not scrapped in page 277: jobcard 11 | 26:04:2023 - 07:41:19:PM
+Skill6 not scrapped in page 278: jobcard 11 | 26:04:2023 - 07:41:23:PM
+Skill6 not scrapped in page 279: jobcard 11 | 26:04:2023 - 07:41:28:PM
+Skill6 not scrapped in page 280: jobcard 11 | 26:04:2023 - 07:41:33:PM
+Skill6 not scrapped in page 281: jobcard 11 | 26:04:2023 - 07:41:37:PM
+Skill6 not scrapped in page 282: jobcard 11 | 26:04:2023 - 07:41:42:PM
+Skill6 not scrapped in page 283: jobcard 11 | 26:04:2023 - 07:41:47:PM
+Skill6 not scrapped in page 284: jobcard 11 | 26:04:2023 - 07:41:51:PM
+Skill6 not scrapped in page 285: jobcard 11 | 26:04:2023 - 07:41:56:PM
+Skill6 not scrapped in page 286: jobcard 11 | 26:04:2023 - 07:42:01:PM
+Skill6 not scrapped in page 287: jobcard 11 | 26:04:2023 - 07:42:05:PM
+Skill6 not scrapped in page 288: jobcard 11 | 26:04:2023 - 07:42:10:PM
+Skill6 not scrapped in page 289: jobcard 11 | 26:04:2023 - 07:42:15:PM
+Skill6 not scrapped in page 290: jobcard 11 | 26:04:2023 - 07:42:19:PM
+Skill6 not scrapped in page 291: jobcard 11 | 26:04:2023 - 07:42:24:PM
+Skill6 not scrapped in page 292: jobcard 11 | 26:04:2023 - 07:42:29:PM
+Skill6 not scrapped in page 293: jobcard 11 | 26:04:2023 - 07:42:33:PM
+Skill6 not scrapped in page 294: jobcard 11 | 26:04:2023 - 07:42:38:PM
+Skill6 not scrapped in page 295: jobcard 11 | 26:04:2023 - 07:42:43:PM
+Skill6 not scrapped in page 296: jobcard 11 | 26:04:2023 - 07:42:47:PM
+Skill6 not scrapped in page 297: jobcard 11 | 26:04:2023 - 07:42:52:PM
+Skill6 not scrapped in page 298: jobcard 11 | 26:04:2023 - 07:42:57:PM
+Skill6 not scrapped in page 299: jobcard 11 | 26:04:2023 - 07:43:01:PM
+Skill6 not scrapped in page 300: jobcard 11 | 26:04:2023 - 07:43:06:PM
+Skill6 not scrapped in page 301: jobcard 11 | 26:04:2023 - 07:43:11:PM
+Skill6 not scrapped in page 302: jobcard 11 | 26:04:2023 - 07:43:16:PM
+Skill6 not scrapped in page 303: jobcard 11 | 26:04:2023 - 07:43:20:PM
+Skill6 not scrapped in page 304: jobcard 11 | 26:04:2023 - 07:43:25:PM
+Skill6 not scrapped in page 305: jobcard 11 | 26:04:2023 - 07:43:30:PM
+Skill6 not scrapped in page 306: jobcard 11 | 26:04:2023 - 07:43:34:PM
+Skill6 not scrapped in page 307: jobcard 11 | 26:04:2023 - 07:43:39:PM
+Skill6 not scrapped in page 308: jobcard 11 | 26:04:2023 - 07:43:44:PM
+Skill6 not scrapped in page 309: jobcard 11 | 26:04:2023 - 07:43:48:PM
+Skill6 not scrapped in page 310: jobcard 11 | 26:04:2023 - 07:43:53:PM
+Skill6 not scrapped in page 311: jobcard 11 | 26:04:2023 - 07:43:58:PM
+Skill6 not scrapped in page 312: jobcard 11 | 26:04:2023 - 07:44:02:PM
+Skill6 not scrapped in page 313: jobcard 11 | 26:04:2023 - 07:44:07:PM
+Skill6 not scrapped in page 314: jobcard 11 | 26:04:2023 - 07:44:12:PM
+Skill6 not scrapped in page 315: jobcard 11 | 26:04:2023 - 07:44:16:PM
+Skill6 not scrapped in page 316: jobcard 11 | 26:04:2023 - 07:44:21:PM
+Skill6 not scrapped in page 317: jobcard 11 | 26:04:2023 - 07:44:26:PM
+Skill6 not scrapped in page 318: jobcard 11 | 26:04:2023 - 07:44:30:PM
+Skill6 not scrapped in page 319: jobcard 11 | 26:04:2023 - 07:44:35:PM
+Skill6 not scrapped in page 320: jobcard 11 | 26:04:2023 - 07:44:40:PM
+Skill6 not scrapped in page 321: jobcard 11 | 26:04:2023 - 07:44:44:PM
+Skill6 not scrapped in page 322: jobcard 11 | 26:04:2023 - 07:44:49:PM
+Skill6 not scrapped in page 323: jobcard 11 | 26:04:2023 - 07:44:54:PM
+Skill6 not scrapped in page 324: jobcard 11 | 26:04:2023 - 07:44:58:PM
+Skill6 not scrapped in page 325: jobcard 11 | 26:04:2023 - 07:45:03:PM
+Skill6 not scrapped in page 326: jobcard 11 | 26:04:2023 - 07:45:08:PM
+Skill6 not scrapped in page 327: jobcard 11 | 26:04:2023 - 07:45:13:PM
+Skill6 not scrapped in page 328: jobcard 11 | 26:04:2023 - 07:45:17:PM
+Skill6 not scrapped in page 329: jobcard 11 | 26:04:2023 - 07:45:22:PM
+Skill6 not scrapped in page 330: jobcard 11 | 26:04:2023 - 07:45:27:PM
+Skill6 not scrapped in page 331: jobcard 11 | 26:04:2023 - 07:45:31:PM
+Skill6 not scrapped in page 332: jobcard 11 | 26:04:2023 - 07:45:36:PM
+Skill6 not scrapped in page 333: jobcard 11 | 26:04:2023 - 07:45:41:PM
+Skill6 not scrapped in page 334: jobcard 11 | 26:04:2023 - 07:45:46:PM
+Skill6 not scrapped in page 335: jobcard 11 | 26:04:2023 - 07:45:50:PM
+Skill6 not scrapped in page 336: jobcard 11 | 26:04:2023 - 07:45:55:PM
+Skill6 not scrapped in page 337: jobcard 11 | 26:04:2023 - 07:46:00:PM
+Skill6 not scrapped in page 338: jobcard 11 | 26:04:2023 - 07:46:04:PM
+Skill6 not scrapped in page 339: jobcard 11 | 26:04:2023 - 07:46:09:PM
+Skill6 not scrapped in page 340: jobcard 11 | 26:04:2023 - 07:46:14:PM
+Skill6 not scrapped in page 341: jobcard 11 | 26:04:2023 - 07:46:18:PM
+Skill6 not scrapped in page 342: jobcard 11 | 26:04:2023 - 07:46:23:PM
+Skill6 not scrapped in page 343: jobcard 11 | 26:04:2023 - 07:46:28:PM
+Skill6 not scrapped in page 344: jobcard 11 | 26:04:2023 - 07:46:33:PM
+Skill6 not scrapped in page 345: jobcard 11 | 26:04:2023 - 07:46:37:PM
+Skill6 not scrapped in page 346: jobcard 11 | 26:04:2023 - 07:46:42:PM
+Skill6 not scrapped in page 347: jobcard 11 | 26:04:2023 - 07:46:47:PM
+Skill6 not scrapped in page 348: jobcard 11 | 26:04:2023 - 07:46:51:PM
+Skill6 not scrapped in page 349: jobcard 11 | 26:04:2023 - 07:46:56:PM
+Skill6 not scrapped in page 350: jobcard 11 | 26:04:2023 - 07:47:01:PM
+Skill6 not scrapped in page 351: jobcard 11 | 26:04:2023 - 07:47:05:PM
+Skill6 not scrapped in page 352: jobcard 11 | 26:04:2023 - 07:47:10:PM
+Skill6 not scrapped in page 353: jobcard 11 | 26:04:2023 - 07:47:15:PM
+Skill6 not scrapped in page 354: jobcard 11 | 26:04:2023 - 07:47:19:PM
+Skill6 not scrapped in page 355: jobcard 11 | 26:04:2023 - 07:47:24:PM
+Skill6 not scrapped in page 356: jobcard 11 | 26:04:2023 - 07:47:29:PM
+Skill6 not scrapped in page 357: jobcard 11 | 26:04:2023 - 07:47:34:PM
+Skill6 not scrapped in page 358: jobcard 11 | 26:04:2023 - 07:47:38:PM
+Skill6 not scrapped in page 359: jobcard 11 | 26:04:2023 - 07:47:43:PM
+Skill6 not scrapped in page 360: jobcard 11 | 26:04:2023 - 07:47:48:PM
+Skill6 not scrapped in page 361: jobcard 11 | 26:04:2023 - 07:47:53:PM
+Skill6 not scrapped in page 362: jobcard 11 | 26:04:2023 - 07:47:57:PM
+Skill6 not scrapped in page 363: jobcard 11 | 26:04:2023 - 07:48:02:PM
+Skill6 not scrapped in page 364: jobcard 11 | 26:04:2023 - 07:48:07:PM
+Skill6 not scrapped in page 365: jobcard 11 | 26:04:2023 - 07:48:11:PM
+Skill6 not scrapped in page 366: jobcard 11 | 26:04:2023 - 07:48:16:PM
+Skill6 not scrapped in page 367: jobcard 11 | 26:04:2023 - 07:48:21:PM
+Skill6 not scrapped in page 368: jobcard 11 | 26:04:2023 - 07:48:26:PM
+Skill6 not scrapped in page 369: jobcard 11 | 26:04:2023 - 07:48:30:PM
+Skill6 not scrapped in page 370: jobcard 11 | 26:04:2023 - 07:48:35:PM
+Skill6 not scrapped in page 371: jobcard 11 | 26:04:2023 - 07:48:40:PM
+Skill6 not scrapped in page 372: jobcard 11 | 26:04:2023 - 07:48:45:PM
+Skill6 not scrapped in page 373: jobcard 11 | 26:04:2023 - 07:48:49:PM
+Skill6 not scrapped in page 374: jobcard 11 | 26:04:2023 - 07:48:54:PM
+Skill6 not scrapped in page 375: jobcard 11 | 26:04:2023 - 07:48:59:PM
+Skill6 not scrapped in page 376: jobcard 11 | 26:04:2023 - 07:49:04:PM
+Skill6 not scrapped in page 377: jobcard 11 | 26:04:2023 - 07:49:08:PM
+Skill6 not scrapped in page 378: jobcard 11 | 26:04:2023 - 07:49:13:PM
+Skill6 not scrapped in page 379: jobcard 11 | 26:04:2023 - 07:49:18:PM
+Skill6 not scrapped in page 380: jobcard 11 | 26:04:2023 - 07:49:22:PM
+Skill6 not scrapped in page 381: jobcard 11 | 26:04:2023 - 07:49:27:PM
+Skill6 not scrapped in page 382: jobcard 11 | 26:04:2023 - 07:49:32:PM
+Skill6 not scrapped in page 383: jobcard 11 | 26:04:2023 - 07:49:36:PM
+Skill6 not scrapped in page 384: jobcard 11 | 26:04:2023 - 07:49:41:PM
+Skill6 not scrapped in page 385: jobcard 11 | 26:04:2023 - 07:49:46:PM
+Skill6 not scrapped in page 386: jobcard 11 | 26:04:2023 - 07:49:51:PM
+Skill6 not scrapped in page 387: jobcard 11 | 26:04:2023 - 07:49:56:PM
+Skill6 not scrapped in page 388: jobcard 11 | 26:04:2023 - 07:50:00:PM
+Skill6 not scrapped in page 389: jobcard 11 | 26:04:2023 - 07:50:05:PM
+Skill6 not scrapped in page 390: jobcard 11 | 26:04:2023 - 07:50:10:PM
+Skill6 not scrapped in page 391: jobcard 11 | 26:04:2023 - 07:50:14:PM
+Skill6 not scrapped in page 392: jobcard 11 | 26:04:2023 - 07:50:19:PM
+Skill6 not scrapped in page 393: jobcard 11 | 26:04:2023 - 07:50:24:PM
+Skill6 not scrapped in page 394: jobcard 11 | 26:04:2023 - 07:50:28:PM
+Skill6 not scrapped in page 395: jobcard 11 | 26:04:2023 - 07:50:33:PM
+Skill6 not scrapped in page 396: jobcard 11 | 26:04:2023 - 07:50:38:PM
+Skill6 not scrapped in page 397: jobcard 11 | 26:04:2023 - 07:50:42:PM
+Skill6 not scrapped in page 398: jobcard 11 | 26:04:2023 - 07:50:47:PM
+Skill6 not scrapped in page 399: jobcard 11 | 26:04:2023 - 07:50:51:PM
+Skill6 not scrapped in page 400: jobcard 11 | 26:04:2023 - 07:50:56:PM
+Skill6 not scrapped in page 401: jobcard 11 | 26:04:2023 - 07:51:01:PM
+Skill6 not scrapped in page 402: jobcard 11 | 26:04:2023 - 07:51:05:PM
+Skill6 not scrapped in page 403: jobcard 11 | 26:04:2023 - 07:51:10:PM
+Skill6 not scrapped in page 404: jobcard 11 | 26:04:2023 - 07:51:15:PM
+Skill6 not scrapped in page 405: jobcard 11 | 26:04:2023 - 07:51:19:PM
+Skill6 not scrapped in page 406: jobcard 11 | 26:04:2023 - 07:51:24:PM
+Skill6 not scrapped in page 407: jobcard 11 | 26:04:2023 - 07:51:29:PM
+Skill6 not scrapped in page 408: jobcard 11 | 26:04:2023 - 07:51:34:PM
+Skill6 not scrapped in page 409: jobcard 11 | 26:04:2023 - 07:51:38:PM
+Skill6 not scrapped in page 410: jobcard 11 | 26:04:2023 - 07:51:43:PM
+Skill6 not scrapped in page 411: jobcard 11 | 26:04:2023 - 07:51:48:PM
+Skill6 not scrapped in page 412: jobcard 11 | 26:04:2023 - 07:51:52:PM
+Skill6 not scrapped in page 413: jobcard 11 | 26:04:2023 - 07:51:57:PM
+Skill6 not scrapped in page 414: jobcard 11 | 26:04:2023 - 07:52:02:PM
+Skill6 not scrapped in page 415: jobcard 11 | 26:04:2023 - 07:52:06:PM
+Skill6 not scrapped in page 416: jobcard 11 | 26:04:2023 - 07:52:11:PM
+Skill6 not scrapped in page 417: jobcard 11 | 26:04:2023 - 07:52:16:PM
+Skill6 not scrapped in page 418: jobcard 11 | 26:04:2023 - 07:52:21:PM
+Skill6 not scrapped in page 419: jobcard 11 | 26:04:2023 - 07:52:25:PM
+Skill6 not scrapped in page 420: jobcard 11 | 26:04:2023 - 07:52:30:PM
+Skill6 not scrapped in page 421: jobcard 11 | 26:04:2023 - 07:52:35:PM
+Skill6 not scrapped in page 422: jobcard 11 | 26:04:2023 - 07:52:40:PM
+Skill6 not scrapped in page 423: jobcard 11 | 26:04:2023 - 07:52:44:PM
+Skill6 not scrapped in page 424: jobcard 11 | 26:04:2023 - 07:52:49:PM
+Skill6 not scrapped in page 425: jobcard 11 | 26:04:2023 - 07:52:54:PM
+Skill6 not scrapped in page 426: jobcard 11 | 26:04:2023 - 07:52:58:PM
+Skill6 not scrapped in page 427: jobcard 11 | 26:04:2023 - 07:53:03:PM
+Skill6 not scrapped in page 428: jobcard 11 | 26:04:2023 - 07:53:08:PM
+Skill6 not scrapped in page 429: jobcard 11 | 26:04:2023 - 07:53:12:PM
+Skill6 not scrapped in page 430: jobcard 11 | 26:04:2023 - 07:53:17:PM
+Skill6 not scrapped in page 431: jobcard 11 | 26:04:2023 - 07:53:22:PM
+Skill6 not scrapped in page 432: jobcard 11 | 26:04:2023 - 07:53:27:PM
+Skill6 not scrapped in page 433: jobcard 11 | 26:04:2023 - 07:53:31:PM
+Skill6 not scrapped in page 434: jobcard 11 | 26:04:2023 - 07:53:36:PM
+Skill6 not scrapped in page 435: jobcard 11 | 26:04:2023 - 07:53:41:PM
+Skill6 not scrapped in page 436: jobcard 11 | 26:04:2023 - 07:53:45:PM
+Skill6 not scrapped in page 437: jobcard 11 | 26:04:2023 - 07:53:50:PM
+Skill6 not scrapped in page 438: jobcard 11 | 26:04:2023 - 07:53:55:PM
+Skill6 not scrapped in page 439: jobcard 11 | 26:04:2023 - 07:53:59:PM
+Skill6 not scrapped in page 440: jobcard 11 | 26:04:2023 - 07:54:04:PM
+Skill6 not scrapped in page 441: jobcard 11 | 26:04:2023 - 07:54:09:PM
+Skill6 not scrapped in page 442: jobcard 11 | 26:04:2023 - 07:54:13:PM
+Skill6 not scrapped in page 443: jobcard 11 | 26:04:2023 - 07:54:18:PM
+Skill6 not scrapped in page 444: jobcard 11 | 26:04:2023 - 07:54:23:PM
+Skill6 not scrapped in page 445: jobcard 11 | 26:04:2023 - 07:54:27:PM
+Skill6 not scrapped in page 446: jobcard 11 | 26:04:2023 - 07:54:32:PM
+Skill6 not scrapped in page 447: jobcard 11 | 26:04:2023 - 07:54:37:PM
+Skill6 not scrapped in page 448: jobcard 11 | 26:04:2023 - 07:54:42:PM
+Skill6 not scrapped in page 449: jobcard 11 | 26:04:2023 - 07:54:46:PM
+Skill6 not scrapped in page 450: jobcard 11 | 26:04:2023 - 07:54:51:PM
+Skill6 not scrapped in page 451: jobcard 11 | 26:04:2023 - 07:54:55:PM
+Skill6 not scrapped in page 452: jobcard 11 | 26:04:2023 - 07:55:00:PM
+Skill6 not scrapped in page 453: jobcard 11 | 26:04:2023 - 07:55:05:PM
+Skill6 not scrapped in page 454: jobcard 11 | 26:04:2023 - 07:55:09:PM
+Skill6 not scrapped in page 455: jobcard 11 | 26:04:2023 - 07:55:14:PM
+Skill6 not scrapped in page 456: jobcard 11 | 26:04:2023 - 07:55:19:PM
+Skill6 not scrapped in page 457: jobcard 11 | 26:04:2023 - 07:55:23:PM
+Skill6 not scrapped in page 458: jobcard 11 | 26:04:2023 - 07:55:28:PM
+Skill6 not scrapped in page 459: jobcard 11 | 26:04:2023 - 07:55:33:PM
+Skill6 not scrapped in page 460: jobcard 11 | 26:04:2023 - 07:55:37:PM
+Skill6 not scrapped in page 461: jobcard 11 | 26:04:2023 - 07:55:42:PM
+Skill6 not scrapped in page 462: jobcard 11 | 26:04:2023 - 07:55:47:PM
+Skill6 not scrapped in page 463: jobcard 11 | 26:04:2023 - 07:55:51:PM
+Skill6 not scrapped in page 464: jobcard 11 | 26:04:2023 - 07:55:56:PM
+Skill6 not scrapped in page 465: jobcard 11 | 26:04:2023 - 07:56:01:PM
+Skill6 not scrapped in page 466: jobcard 11 | 26:04:2023 - 07:56:06:PM
+Skill6 not scrapped in page 467: jobcard 11 | 26:04:2023 - 07:56:10:PM
+Skill6 not scrapped in page 468: jobcard 11 | 26:04:2023 - 07:56:15:PM
+Skill6 not scrapped in page 469: jobcard 11 | 26:04:2023 - 07:56:20:PM
+Skill6 not scrapped in page 470: jobcard 11 | 26:04:2023 - 07:56:24:PM
+Skill6 not scrapped in page 471: jobcard 11 | 26:04:2023 - 07:56:29:PM
+Skill6 not scrapped in page 472: jobcard 11 | 26:04:2023 - 07:56:34:PM
+Skill6 not scrapped in page 473: jobcard 11 | 26:04:2023 - 07:56:38:PM
+Skill6 not scrapped in page 474: jobcard 11 | 26:04:2023 - 07:56:43:PM
+Skill6 not scrapped in page 475: jobcard 11 | 26:04:2023 - 07:56:48:PM
+Skill6 not scrapped in page 476: jobcard 11 | 26:04:2023 - 07:56:52:PM
+Skill6 not scrapped in page 477: jobcard 11 | 26:04:2023 - 07:56:57:PM
+Skill6 not scrapped in page 478: jobcard 11 | 26:04:2023 - 07:57:01:PM
+Skill6 not scrapped in page 479: jobcard 11 | 26:04:2023 - 07:57:06:PM
+Skill6 not scrapped in page 480: jobcard 11 | 26:04:2023 - 07:57:11:PM
+Skill6 not scrapped in page 481: jobcard 11 | 26:04:2023 - 07:57:15:PM
+Skill6 not scrapped in page 482: jobcard 11 | 26:04:2023 - 07:57:20:PM
+Skill6 not scrapped in page 483: jobcard 11 | 26:04:2023 - 07:57:25:PM
+Skill6 not scrapped in page 484: jobcard 11 | 26:04:2023 - 07:57:29:PM
+Skill6 not scrapped in page 485: jobcard 11 | 26:04:2023 - 07:57:34:PM
+Skill6 not scrapped in page 486: jobcard 11 | 26:04:2023 - 07:57:39:PM
+Skill6 not scrapped in page 487: jobcard 11 | 26:04:2023 - 07:57:44:PM
+Skill6 not scrapped in page 488: jobcard 11 | 26:04:2023 - 07:57:48:PM
+Skill6 not scrapped in page 489: jobcard 11 | 26:04:2023 - 07:57:53:PM
+Skill6 not scrapped in page 490: jobcard 11 | 26:04:2023 - 07:57:58:PM
+Skill6 not scrapped in page 491: jobcard 11 | 26:04:2023 - 07:58:02:PM
+Skill6 not scrapped in page 492: jobcard 11 | 26:04:2023 - 07:58:07:PM
+Skill6 not scrapped in page 493: jobcard 11 | 26:04:2023 - 07:58:12:PM
+Skill6 not scrapped in page 494: jobcard 11 | 26:04:2023 - 07:58:17:PM
+Skill6 not scrapped in page 495: jobcard 11 | 26:04:2023 - 07:58:21:PM
+Skill6 not scrapped in page 496: jobcard 11 | 26:04:2023 - 07:58:26:PM
+Skill6 not scrapped in page 497: jobcard 11 | 26:04:2023 - 07:58:31:PM
+Skill6 not scrapped in page 498: jobcard 11 | 26:04:2023 - 07:58:35:PM
+Skill6 not scrapped in page 499: jobcard 11 | 26:04:2023 - 07:58:40:PM
+Skill6 not scrapped in page 500: jobcard 11 | 26:04:2023 - 07:58:45:PM
+Skill6 not scrapped in page 501: jobcard 11 | 26:04:2023 - 07:58:49:PM
+Skill6 not scrapped in page 502: jobcard 11 | 26:04:2023 - 07:58:54:PM
+Skill6 not scrapped in page 503: jobcard 11 | 26:04:2023 - 07:58:59:PM
+Skill6 not scrapped in page 504: jobcard 11 | 26:04:2023 - 07:59:04:PM
+Skill6 not scrapped in page 505: jobcard 11 | 26:04:2023 - 07:59:08:PM
+Skill6 not scrapped in page 506: jobcard 11 | 26:04:2023 - 07:59:13:PM
+Skill6 not scrapped in page 507: jobcard 11 | 26:04:2023 - 07:59:18:PM
+Skill6 not scrapped in page 508: jobcard 11 | 26:04:2023 - 07:59:23:PM
+Skill6 not scrapped in page 509: jobcard 11 | 26:04:2023 - 07:59:28:PM
+Skill6 not scrapped in page 510: jobcard 11 | 26:04:2023 - 07:59:33:PM
+Skill6 not scrapped in page 511: jobcard 11 | 26:04:2023 - 07:59:37:PM
+Skill6 not scrapped in page 512: jobcard 11 | 26:04:2023 - 07:59:42:PM
+Skill6 not scrapped in page 513: jobcard 11 | 26:04:2023 - 07:59:47:PM
+Skill6 not scrapped in page 514: jobcard 11 | 26:04:2023 - 07:59:51:PM
+Skill6 not scrapped in page 515: jobcard 11 | 26:04:2023 - 07:59:56:PM
+Skill6 not scrapped in page 516: jobcard 11 | 26:04:2023 - 08:00:01:PM
+Skill6 not scrapped in page 517: jobcard 11 | 26:04:2023 - 08:00:05:PM
+Skill6 not scrapped in page 518: jobcard 11 | 26:04:2023 - 08:00:10:PM
+Skill6 not scrapped in page 519: jobcard 11 | 26:04:2023 - 08:00:15:PM
+Skill6 not scrapped in page 520: jobcard 11 | 26:04:2023 - 08:00:19:PM
+Skill6 not scrapped in page 521: jobcard 11 | 26:04:2023 - 08:00:24:PM
+Skill6 not scrapped in page 522: jobcard 11 | 26:04:2023 - 08:00:29:PM
+Skill6 not scrapped in page 523: jobcard 11 | 26:04:2023 - 08:00:34:PM
+Skill6 not scrapped in page 524: jobcard 11 | 26:04:2023 - 08:00:38:PM
+Skill6 not scrapped in page 525: jobcard 11 | 26:04:2023 - 08:00:43:PM
+Skill6 not scrapped in page 526: jobcard 11 | 26:04:2023 - 08:00:48:PM
+Skill6 not scrapped in page 527: jobcard 11 | 26:04:2023 - 08:00:52:PM
+Skill6 not scrapped in page 528: jobcard 11 | 26:04:2023 - 08:00:57:PM
+Skill6 not scrapped in page 529: jobcard 11 | 26:04:2023 - 08:01:02:PM
+Skill6 not scrapped in page 530: jobcard 11 | 26:04:2023 - 08:01:06:PM
+Skill6 not scrapped in page 531: jobcard 11 | 26:04:2023 - 08:01:11:PM
+Skill6 not scrapped in page 532: jobcard 11 | 26:04:2023 - 08:01:16:PM
+Skill6 not scrapped in page 533: jobcard 11 | 26:04:2023 - 08:01:20:PM
+Skill6 not scrapped in page 534: jobcard 11 | 26:04:2023 - 08:01:25:PM
+Skill6 not scrapped in page 535: jobcard 11 | 26:04:2023 - 08:01:30:PM
+Skill6 not scrapped in page 536: jobcard 11 | 26:04:2023 - 08:01:35:PM
+Skill6 not scrapped in page 537: jobcard 11 | 26:04:2023 - 08:01:40:PM
+Skill6 not scrapped in page 538: jobcard 11 | 26:04:2023 - 08:01:44:PM
+Skill6 not scrapped in page 539: jobcard 11 | 26:04:2023 - 08:01:49:PM
+Skill6 not scrapped in page 540: jobcard 11 | 26:04:2023 - 08:01:54:PM
+Skill6 not scrapped in page 541: jobcard 11 | 26:04:2023 - 08:01:59:PM
+Skill6 not scrapped in page 542: jobcard 11 | 26:04:2023 - 08:02:03:PM
+Skill6 not scrapped in page 543: jobcard 11 | 26:04:2023 - 08:02:08:PM
+Skill6 not scrapped in page 544: jobcard 11 | 26:04:2023 - 08:02:13:PM
+Skill6 not scrapped in page 545: jobcard 11 | 26:04:2023 - 08:02:17:PM
+Skill6 not scrapped in page 546: jobcard 11 | 26:04:2023 - 08:02:22:PM
+Skill6 not scrapped in page 547: jobcard 11 | 26:04:2023 - 08:02:27:PM
+Skill6 not scrapped in page 548: jobcard 11 | 26:04:2023 - 08:02:32:PM
+Skill6 not scrapped in page 549: jobcard 11 | 26:04:2023 - 08:02:36:PM
+Skill6 not scrapped in page 550: jobcard 11 | 26:04:2023 - 08:02:41:PM
+Skill6 not scrapped in page 551: jobcard 11 | 26:04:2023 - 08:02:46:PM
+Skill6 not scrapped in page 552: jobcard 11 | 26:04:2023 - 08:02:50:PM
+Skill6 not scrapped in page 553: jobcard 11 | 26:04:2023 - 08:02:55:PM
+Skill6 not scrapped in page 554: jobcard 11 | 26:04:2023 - 08:03:00:PM
+Skill6 not scrapped in page 555: jobcard 11 | 26:04:2023 - 08:03:05:PM
+Skill6 not scrapped in page 556: jobcard 11 | 26:04:2023 - 08:03:10:PM
+Skill6 not scrapped in page 557: jobcard 11 | 26:04:2023 - 08:03:15:PM
+Skill6 not scrapped in page 558: jobcard 11 | 26:04:2023 - 08:03:19:PM
+Skill6 not scrapped in page 559: jobcard 11 | 26:04:2023 - 08:03:25:PM
+Skill6 not scrapped in page 560: jobcard 11 | 26:04:2023 - 08:03:31:PM
+Skill6 not scrapped in page 561: jobcard 11 | 26:04:2023 - 08:03:36:PM
+Skill6 not scrapped in page 562: jobcard 11 | 26:04:2023 - 08:03:40:PM
+Skill6 not scrapped in page 563: jobcard 11 | 26:04:2023 - 08:03:45:PM
+Skill6 not scrapped in page 564: jobcard 11 | 26:04:2023 - 08:03:50:PM
+Skill6 not scrapped in page 565: jobcard 11 | 26:04:2023 - 08:03:55:PM
+Skill6 not scrapped in page 566: jobcard 11 | 26:04:2023 - 08:04:00:PM
+Skill6 not scrapped in page 567: jobcard 11 | 26:04:2023 - 08:04:05:PM
+Skill6 not scrapped in page 568: jobcard 11 | 26:04:2023 - 08:04:10:PM
+Skill6 not scrapped in page 569: jobcard 11 | 26:04:2023 - 08:04:14:PM
+Skill6 not scrapped in page 570: jobcard 11 | 26:04:2023 - 08:04:19:PM
+Skill6 not scrapped in page 571: jobcard 11 | 26:04:2023 - 08:04:24:PM
+Skill6 not scrapped in page 572: jobcard 11 | 26:04:2023 - 08:04:28:PM
+Skill6 not scrapped in page 573: jobcard 11 | 26:04:2023 - 08:04:33:PM
+Skill6 not scrapped in page 574: jobcard 11 | 26:04:2023 - 08:04:37:PM
+Skill6 not scrapped in page 575: jobcard 11 | 26:04:2023 - 08:04:42:PM
+Skill6 not scrapped in page 576: jobcard 11 | 26:04:2023 - 08:04:47:PM
+Skill6 not scrapped in page 577: jobcard 11 | 26:04:2023 - 08:04:52:PM
+Skill6 not scrapped in page 578: jobcard 11 | 26:04:2023 - 08:04:57:PM
+Skill6 not scrapped in page 579: jobcard 11 | 26:04:2023 - 08:05:02:PM
+Skill6 not scrapped in page 580: jobcard 11 | 26:04:2023 - 08:05:06:PM
+Skill6 not scrapped in page 581: jobcard 11 | 26:04:2023 - 08:05:11:PM
+Skill6 not scrapped in page 582: jobcard 11 | 26:04:2023 - 08:05:16:PM
+Skill6 not scrapped in page 583: jobcard 11 | 26:04:2023 - 08:05:21:PM
+Skill6 not scrapped in page 584: jobcard 11 | 26:04:2023 - 08:05:25:PM
+Skill6 not scrapped in page 585: jobcard 11 | 26:04:2023 - 08:05:30:PM
+Skill6 not scrapped in page 586: jobcard 11 | 26:04:2023 - 08:05:35:PM
+Skill6 not scrapped in page 587: jobcard 11 | 26:04:2023 - 08:05:40:PM
+Skill6 not scrapped in page 588: jobcard 11 | 26:04:2023 - 08:05:45:PM
+Skill6 not scrapped in page 589: jobcard 11 | 26:04:2023 - 08:05:49:PM
+Skill6 not scrapped in page 590: jobcard 11 | 26:04:2023 - 08:05:54:PM
+Skill6 not scrapped in page 591: jobcard 11 | 26:04:2023 - 08:05:59:PM
+Skill6 not scrapped in page 592: jobcard 11 | 26:04:2023 - 08:06:04:PM
+Skill6 not scrapped in page 593: jobcard 11 | 26:04:2023 - 08:06:09:PM
+Skill6 not scrapped in page 594: jobcard 11 | 26:04:2023 - 08:06:13:PM
+Skill6 not scrapped in page 595: jobcard 11 | 26:04:2023 - 08:06:18:PM
+Skill6 not scrapped in page 596: jobcard 11 | 26:04:2023 - 08:06:23:PM
+Skill6 not scrapped in page 597: jobcard 11 | 26:04:2023 - 08:06:28:PM
+Skill6 not scrapped in page 598: jobcard 11 | 26:04:2023 - 08:06:32:PM
+Skill6 not scrapped in page 599: jobcard 11 | 26:04:2023 - 08:06:37:PM
+Skill6 not scrapped in page 600: jobcard 11 | 26:04:2023 - 08:06:42:PM
+Skill6 not scrapped in page 601: jobcard 11 | 26:04:2023 - 08:06:47:PM
+Skill6 not scrapped in page 602: jobcard 11 | 26:04:2023 - 08:06:51:PM
+Skill6 not scrapped in page 603: jobcard 11 | 26:04:2023 - 08:06:56:PM
+Skill6 not scrapped in page 604: jobcard 11 | 26:04:2023 - 08:07:01:PM
+Skill6 not scrapped in page 605: jobcard 11 | 26:04:2023 - 08:07:05:PM
+Skill6 not scrapped in page 606: jobcard 11 | 26:04:2023 - 08:07:10:PM
+Skill6 not scrapped in page 607: jobcard 11 | 26:04:2023 - 08:07:15:PM
+Skill6 not scrapped in page 608: jobcard 11 | 26:04:2023 - 08:07:19:PM
+Skill6 not scrapped in page 609: jobcard 11 | 26:04:2023 - 08:07:24:PM
+Skill6 not scrapped in page 610: jobcard 11 | 26:04:2023 - 08:07:29:PM
+Skill6 not scrapped in page 611: jobcard 11 | 26:04:2023 - 08:07:33:PM
+Skill6 not scrapped in page 612: jobcard 11 | 26:04:2023 - 08:07:38:PM
+Traceback (most recent call last):
+  File "F:\Cresteem - Helian\Projects\JobRAID\Spider\naukri.py", line 184, in naukri_spider
+    try:ptime = driver.find_element(By.XPATH,ptimexpath).text
+                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 90, in text
+    return self._execute(Command.GET_ELEMENT_TEXT)["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webelement.py", line 403, in _execute
+    return self._parent.execute(command, params)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 438, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 290, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 311, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\request.py", line 74, in request
+    return self.request_encode_url(
+           ^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\request.py", line 96, in request_encode_url
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 449, in _make_request
+    six.raise_from(e, None)
+  File "<string>", line 3, in raise_from
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 444, in _make_request
+    httplib_response = conn.getresponse()
+                       ^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\http\client.py", line 1376, in getresponse
+    self.close()
+  File "C:\Python311\Lib\http\client.py", line 953, in close
+    def close(self):
+    
+KeyboardInterrupt
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\urllib3\connection.py", line 174, in _new_conn
+    conn = connection.create_connection(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\util\connection.py", line 95, in create_connection
+    raise err
+  File "C:\Python311\Lib\site-packages\urllib3\util\connection.py", line 85, in create_connection
+    sock.connect(sa)
+ConnectionRefusedError: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 703, in urlopen
+    httplib_response = self._make_request(
+                       ^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 398, in _make_request
+    conn.request(method, url, **httplib_request_kw)
+  File "C:\Python311\Lib\site-packages\urllib3\connection.py", line 244, in request
+    super(HTTPConnection, self).request(method, url, body=body, headers=headers)
+  File "C:\Python311\Lib\http\client.py", line 1282, in request
+    self._send_request(method, url, body, headers, encode_chunked)
+  File "C:\Python311\Lib\http\client.py", line 1328, in _send_request
+    self.endheaders(body, encode_chunked=encode_chunked)
+  File "C:\Python311\Lib\http\client.py", line 1277, in endheaders
+    self._send_output(message_body, encode_chunked=encode_chunked)
+  File "C:\Python311\Lib\http\client.py", line 1037, in _send_output
+    self.send(msg)
+  File "C:\Python311\Lib\http\client.py", line 975, in send
+    self.connect()
+  File "C:\Python311\Lib\site-packages\urllib3\connection.py", line 205, in connect
+    conn = self._new_conn()
+           ^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connection.py", line 186, in _new_conn
+    raise NewConnectionError(
+urllib3.exceptions.NewConnectionError: <urllib3.connection.HTTPConnection object at 0x000001F37ACF05D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "F:\Cresteem - Helian\Projects\JobRAID\Spider\naukri.py", line 186, in naukri_spider
+    ptime = WebDriverWait(driver,sec).until(EC.presence_of_element_located((By.XPATH,ptimexpath)))
+            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\support\wait.py", line 86, in until
+    value = method(self._driver)
+            ^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\support\expected_conditions.py", line 69, in _predicate
+    return driver.find_element(*locator)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 831, in find_element
+    return self.execute(Command.FIND_ELEMENT, {"using": by, "value": value})["value"]
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\webdriver.py", line 438, in execute
+    response = self.command_executor.execute(driver_command, params)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 290, in execute
+    return self._request(command_info[0], url, body=data)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\selenium\webdriver\remote\remote_connection.py", line 311, in _request
+    response = self._conn.request(method, url, body=body, headers=headers)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\request.py", line 78, in request
+    return self.request_encode_body(
+           ^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\request.py", line 170, in request_encode_body
+    return self.urlopen(method, url, **extra_kw)
+           ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\poolmanager.py", line 376, in urlopen
+    response = conn.urlopen(method, u.request_uri, **kw)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 815, in urlopen
+    return self.urlopen(
+           ^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\connectionpool.py", line 787, in urlopen
+    retries = retries.increment(
+              ^^^^^^^^^^^^^^^^^^
+  File "C:\Python311\Lib\site-packages\urllib3\util\retry.py", line 592, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPConnectionPool(host='localhost', port=50944): Max retries exceeded with url: /session/75acf1b71b87b0ba86cac1ca389b305f/element (Caused by NewConnectionError('<urllib3.connection.HTTPConnection object at 0x000001F37ACF05D0>: Failed to establish a new connection: [WinError 10061] No connection could be made because the target machine actively refused it'))
+ | 26:04:2023 - 08:07:55:PM
+12215 jobs are scraped | 26:04:2023 - 08:07:55:PM
+Total rows in DF : 18910 | 09:09:2023 - 03:04:01:PM
+After removing na's : 20 | 09:09:2023 - 03:04:01:PM
+Starting to insert rows into DB | 09:09:2023 - 03:04:01:PM
+Total rows in DF : 18910 | 09:09:2023 - 03:07:13:PM
+After removing na's : 20 | 09:09:2023 - 03:07:13:PM
+Starting to insert rows into DB | 09:09:2023 - 03:07:13:PM
+All rows were inserted
+ | 09:09:2023 - 03:07:13:PM
